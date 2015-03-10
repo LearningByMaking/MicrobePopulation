@@ -1,0 +1,90 @@
+;jlogo file for BasicBoard written by: ANONYMOUS
+
+
+ to BasicBoard
+ 	print "|starting BasicBoard| ;print welcome message
+ 	init-BasicBoard ;call init-BasicBoard
+ 	loop ;infinite loop
+ 	[
+ 		see-packet ;read packet from App Board
+ 		wait 150 ;wait 15 seconds
+ 	]
+ end
+ 
+ to init-BasicBoard
+  init-hardware ;call init-hardware word
+ 	make "check 0 ;create checksum
+  make "oldcheck 0 ;create old checksum
+  make "time-list [] ;create list of times
+  make "light-list [] ;create list of light values
+  make "start-time int ( now / 1000 )  ;create curent time
+
+ end
+ 
+ to init-hardware
+ 	stopvm
+ 	ul-power
+ 	wait 15
+ 	ul-init
+ 	wait 15
+ 	ul-go
+ 	wait 15
+
+ end
+
+ to see-packet
+  make "packet-bytes Xget-packet  ;get packet from memory location $1fc0 on app board
+  if (count :packet-bytes) > 0 ;make sure packet is not empty
+	[    
+    process-header     
+	]
+    
+end
+
+
+to process-header 
+  let [nws ((first :packet-bytes) / 2) + 1] ;get length of packet
+  make "check wnth :nws :packet-bytes  ;extract checksum from last value
+  if not (:check = :oldcheck) ;make sure the value of checksum has changed
+  [
+    make "type nth 1 :packet-bytes ;pull out the packet type       
+    if (:type = 42) [ process-data-packet ] ;make sure it's the type we expected
+  ]
+  make "oldcheck :check ;save current value of checksum to old value for next time
+end
+
+to process-data-packet
+	make "light wnth 4 :packet-bytes ;extract light value from packet
+	make "temp1 wnth 5 :packet-bytes ;extract temp value from packet
+	make "temp2 wnth 6 :packet-bytes ;extract temp value from packet
+  make "time elapsedTime ;calculate elapsed time
+  print-packet ;print raw data
+	print (se "|light:| :light "|temp1:| :temp1 "|temp2:| :temp2 "|time:| :time) ;print processed data
+  addTimeToList :time ;add Time to Time- =List
+  addLightToList :light ;add Light to Light-List
+  plot-light ;plot the light data
+end
+
+to plot-light
+   x-data "|Elapsed Time (seconds)| :time-list ;set x title and pass values
+   y-data "|Light (adc)| :light-list ;set y title and pass values
+   plot 2 ;plot as unconnected points
+   display "|-geometry 600x400+1000+100| ;plot with specified size and location
+  
+end
+
+to elapsedTime
+   output  int ( now / 1000 ) - :start-time ;find differerence between current time and start time
+end
+
+to addTimeToList :time
+  make "time-list (se :time-list :time) ;add time to list
+end
+
+to addLightToList :photo
+  make "light-list (se :light-list :photo) ;add light to list
+end
+
+to Xget-packet
+output rl $1fc0 30
+end

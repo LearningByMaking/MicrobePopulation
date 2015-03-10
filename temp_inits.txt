@@ -1,0 +1,60 @@
+
+;constants [[ta0ctl $0160][ta0r $0170][ta0ccr0 $172]
+;          [p1dir $22][p1out $21][p2dir $2a][p2out $29]
+;           [adcae0 $4a][adcae1 $4b][adcctl0 $01b0][adcctl1 $1b2][adcmem $1b4]]
+constants[[p1dir $22][p1out $21][p1sel $20]
+          [p2dir $2A][p2out $29][p2sel $2E]
+          [p3dir $1A][p3out $19][p3sel $1B]
+          [p4dir $1E][p4out $1D][p4sel $1F]
+          [p5dir $32][p5out $31][p5sel $33]
+          [p6dir $36][p6out $35][p6sel $37]
+          [ucb0ctl0 $68][ucb0ctl1 $69]
+	  [ucb0br0 $6a][ucb0br1 $6b]
+	  [ucb0stat $6d][ucb0rxbuf $6e][ucb0txbuf $6f]
+          [ADC12CTL0 $1A0][ADC12CTL1 $1A2][ADC12MEM0 $140]
+          [ADC12IE $1A6][ADC12MCTL0 $80][ADC12IFG $1A4]
+          [ADC12IV $1A8]
+          [adcae0 $4a][adcae1 $4b][adcctl0 $01b0][adcctl1 $1b2][adcmem $1b4]]
+
+
+to init-pins
+writeb p2dir $38
+writeb p2out $00
+write adcctl0 $10
+write adcctl1 $f8
+bset adcae0 1
+bset adcctl0 2
+
+dp4enable
+dp4output
+dp4off
+alloff
+
+end
+
+
+to flash
+repeat 10 [cyan mwait 50 magenta mwait 50 blue mwait 50]
+off
+end
+
+define redon [][bclr p2out $20]
+define redoff [][bset p2out $20]
+define greenon [][bclr p2out $10]
+define greenoff [][bset p2out $10]
+define blueon [][bclr p2out $08]
+define blueoff [][bset p2out $08]
+define alloff [][bset p2out $38]
+
+define red[][redon blueoff greenoff]
+define green[][redoff blueoff greenon]
+define blue[][redoff blueon greenoff]
+define cyan [][redoff greenon blueon]
+define magenta [][redon greenoff blueon]
+define yellow [][redon greenon blueoff]
+define white [][redon greenon blueon]
+define off [][redoff greenoff blueoff]
+
+
+
+

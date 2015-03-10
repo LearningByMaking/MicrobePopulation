@@ -1,0 +1,278 @@
+  Welcome to Logo
+project "microPop"
+  Start Project:  microPop"     Tue Mar 10 11:27:37 PDT 2015   unix time:  1426012057392
+  Can't open file microPop".logo in project
+project "microPop
+  Start Project:  microPop     Tue Mar 10 11:28:08 PDT 2015   unix time:  1426012088131
+  Opening Project  microPop
+  can't open port /dev/ttyUSB0 in open-linux-port
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Mar 10 11:29:26 PDT 2015   unix time:  1426012166142
+  Opening Project  microPop
+  can't open port /dev/ttyUSB0 in open-linux-port
+
+
+
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Mar 10 11:30:50 PDT 2015   unix time:  1426012250812
+  Opening Project  microPop
+  can't open port /dev/ttyUSB0 in open-linux-port
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Welcome to Logo
+project "micropPop
+  Start Project:  micropPop     Tue Mar 10 11:32:25 PDT 2015   unix time:  1426012345793
+  Can't open file micropPop.logo in project
+project "microPop
+  Start Project:  microPop     Tue Mar 10 11:32:29 PDT 2015   unix time:  1426012349966
+  Opening Project  microPop
+  can't open port /dev/ttyUSB0 in open-linux-port
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Mar 10 11:33:07 PDT 2015   unix time:  1426012387291
+  Opening Project  microPop
+print 1234
+  1234
+ongo
+  ongo undefined
+ul-go
+  ul-go undefined
+ul-power
+  ul-power undefined
+.ul-power
+.compile
+  Compiling...
+  891 bytes
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Mar 10 11:35:05 PDT 2015   unix time:  1426012505988
+  Opening Project  microPop
+print 1234
+  Chip not found.
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Mar 10 12:06:47 PDT 2015   unix time:  1426014407341
+  Opening Project  microPop
+.compile
+  Compiling...
+  init-packet undefined in collect-data
+.compile
+  Can't open file /home/user/LbyM/MicrobialPopulation/sdpackets.txt in source-string
+.compile
+  Compiling...
+  1270 bytes
+.download
+  Chip not found.
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Mar 10 12:08:40 PDT 2015   unix time:  1426014520372
+  Opening Project  microPop
+.compile
+  Compiling...
+  1270 bytes
+.download
+  1270 bytes
+.ul-power
+.ul-init
+.ul-go
+  1587
+  1679
+  1743
+  1479
+  1567
+  1747
+  1724
+  1637
+  1023
+  1980
+  999
+  1340
+  1406
+  1679
+  1743
+  1685
+  1503
+  1457
+  1496
+  1601
+  1648
+  1708
+  1703
+  1745
+  1725
+  1729
+  1708
+  1678
+  1712
+  1177
+  1311
+  1459
+  1520
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Mar 10 12:16:07 PDT 2015   unix time:  1426014967130
+  Opening Project  microPop
+  can't open port /dev/ttyUSB0 in open-linux-port
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Mar 10 12:16:47 PDT 2015   unix time:  1426015007352
+  Opening Project  microPop
+print 1234
+  1234
+ul-power
+  ul-power undefined
+.ul-power
+.ul-init
+print readA1
+  readA1 undefined
+.compile
+  Compiling...
+  1270 bytes
+print readA1
+  2144
+print readA2
+  1383
+print readA3
+  1191
+print readA1
+  1507
+print readA1
+  1840
+print readA2
+  1369
+print readA3
+  1591
+print readA1
+  1487
+print readA3
+  1340
+print readA3
+  1585
+print readA3
+  1292
+print readA3
+  1308
+print readA3
+  1319
+.stopvm
+print 1234
+  1234
+.compile
+  Compiling...
+  1269 bytes
+.download
+  1269 bytes
+.ul-power
+.ul-init
+.ul-go
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1426016134 14088 65535 00118 06071 01164
+  adc: 1164
+  I don't know how to addADCToList in process-data-packet
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1426016155 14088 65535 00120 07734 01137
+  adc: 1137
+  light has no value in process-data-packet
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1426016202 14088 65535 00125 04737 01167
+  adc: 1167 time: 3
+  light-list has no value in addADCToList
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1426016252 14088 65535 00130 04013 01116
+  adc: 1116 time: 3
+  light-list has no value in plot-adc
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1426016293 14088 65535 00134 05147 01167
+  adc: 1167 time: 3
+  T55 1426016312 14088 65535 00135 06148 01113
+  adc: 1113 time: 23
+  T55 1426016331 14088 65535 00137 08150 01159
+  adc: 1159 time: 41
+  T55 1426016349 14088 65535 00140 00152 01111
+  adc: 1111 time: 60
+  T55 1426016368 14088 65535 00141 01153 01164
+  adc: 1164 time: 78
+  T55 1426016386 14088 65535 00143 03155 01095
+  adc: 1095 time: 97
+  T55 1426016405 14088 65535 00145 05157 01159
+  adc: 1159 time: 115
+  T55 1426016423 14088 65535 00146 06158 01112
+  adc: 1112 time: 134
+  T55 1426016442 14088 65535 00148 08160 01159
+  adc: 1159 time: 152
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1426017748 14088 65535 00280 00285 01103
+  adc: 1103 time: 3
+  T55 1426017767 14088 65535 00281 01286 01087
+  adc: 1087 time: 21
+  T55 1426017785 14088 65535 00283 03288 01159
+  adc: 1159 time: 40
+  T55 1426017804 14088 65535 00285 05290 01159
+  adc: 1159 time: 58
+  T55 1426017822 14088 65535 00286 06291 01127
+  adc: 1127 time: 77
+..
+  stopped.

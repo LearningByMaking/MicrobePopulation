@@ -1,0 +1,59 @@
+;ulogo file for $projectName
+ 
+constants [	
+
+	  [p1dir $22][p1out $21][p1in $20]
+          [p2dir $2a][p2out $29]
+          [p3sel $1b]
+          [p4dir $1E][p4out $1D][p4in $1C][p4sel $1F]
+          [p5dir $32][p5out $31][p5in $30][p5sel $33]
+	  [p6dir $36] [p6out $35]
+          [ucb0ctl0 $68][ucb0ctl1 $69]
+
+	  [ucb0br0 $6a][ucb0br1 $6b]
+
+	  [ucb0stat $6d][ucb0rxbuf $6e][ucb0txbuf $6f]
+          [packet $1f80][rpacket $1fc0]
+          
+	  ]
+
+
+
+ to ul-power
+	 init-pins 
+	 redon
+	 wait 10
+	 redoff
+ end
+ 
+ to ul-init 
+	 redon
+	 greenon
+	 wait 10
+	 redoff
+     	 greenoff
+ end
+ 
+ to ul-go 
+ 	 greenon
+	 wait 10
+	 greenoff
+
+	 loop
+	 [
+		redon	 	
+		collect-data
+		wait 10 
+		redoff
+	 	wait 100
+	 ]
+ 
+ end
+
+ to collect-data
+ 	init-packet 42 ;42 represents light and temp data
+ 	fprint readA3
+ 	fprint readA2
+ 	fprint readA1
+ 	add-checksum
+ end

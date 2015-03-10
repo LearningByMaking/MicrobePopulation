@@ -1,0 +1,74 @@
+
+ constant [
+           [rpacket $1fc0]
+           [type_image 60]
+           [bumpcount $be00]
+          ]
+
+global [tstamph tstampl]
+
+to init-packet :n
+  write rpacket 0
+  settstamph timestamph
+  settstampl timestampl
+  clear-res
+
+  writeb rpacket + 1 :n
+  fprint read $be00  
+  fprint tstamph
+  fprint tstampl
+end
+
+ to fprint :n
+  let [cnt readb rpacket]      ; ignore type just use length
+  write rpacket + :cnt + 2 :n
+  writeb rpacket :cnt + 2
+ end
+
+ to fprintb :n
+ let [cnt readb rpacket]      ; ignore type just use length
+ writeb rpacket + :cnt + 2 :n
+ writeb rpacket :cnt + 1
+ end
+
+to wdchecksum :addr :len
+let [res 0]
+repeat :len / 2 
+ [ make "res :res + read :addr 
+   make "addr :addr + 2]
+output :res
+end
+
+to add-checksum
+ fprint 0 - wdchecksum rpacket (readb rpacket) + 2  ; add checksum to end of packet
+ writeb rpacket (readb rpacket) - 2 
+end
+
+to clear-res           ; fill with $0000 $ffff $ffff $0000 $0000 ...
+let [addr rpacket]
+write :addr 0
+make "addr :addr + 2
+repeat 6 [
+ write :addr $ffff
+ make "addr :addr + 2
+ write :addr $ffff
+ make "addr :addr + 2
+ write :addr $0000
+ make "addr :addr + 2
+ write :addr $0000
+ make "addr :addr + 2] 
+end
+
+to test-packet :n
+let [cnt 0]
+repeat :n [
+   redon
+   make "cnt :cnt + 1
+   init-packet 60
+   fprint 0
+   fprint :cnt
+   fprint 1
+   repeat 6 [ mwait 10000 ]
+   redoff
+   ]
+end

@@ -1,0 +1,95 @@
+;jlogo file for BasicBoard written by: ANONYMOUS
+
+
+to microPop
+ 	print "|starting microPop| 
+ 	init-microPop
+ 	loop 
+ 	[
+ 		see-packet 
+ 		wait 150 
+ 	]
+ end
+ 
+to init-microPop
+  init-hardware 
+  make "check 0 
+  make "oldcheck 0 
+  make "time-list [] 
+  make "adc-list [] 
+  make "start-time int ( now / 1000 )  
+
+end
+ 
+to init-hardware
+ 	stopvm ;stop vm makes sure the board is not running
+ 	ul-power
+ 	wait 15
+ 	ul-init
+ 	wait 15
+ 	ul-go
+ 	wait 15
+
+end
+
+to see-packet
+  make "packet-bytes collect-packet  
+  if (count :packet-bytes) > 0 ;
+  [    
+    process-header     
+  ]
+    
+end
+
+
+to process-header 
+  let [nws ((first :packet-bytes) / 2) + 1] 
+  make "check wnth :nws :packet-bytes  
+  if not (:check = :oldcheck) 
+  [
+    make "type nth 1 :packet-bytes 
+    if (:type = 55) [ process-data-packet ] 
+  ]
+  make "oldcheck :check 
+end
+
+to process-data-packet
+  make "adc wnth 4 :packet-bytes 	
+  make "time elapsedTime 
+  print-packet 
+  print (se "|adc:| :adc "|time:| :time) 
+  addTimeToList :time 
+  addADCToList :adc 
+
+  prfopen "data.txt
+  prfprint (se :adc :time)
+  prfclose
+
+  plot-adc 
+end
+
+to plot-adc
+   x-data "|Elapsed Time (seconds)| :time-list ;
+   y-data "|ADC reading| :adc-list 
+   plot 2 
+   display "|-geometry 600x400+1000+100| 
+  
+end
+
+to elapsedTime
+   output  int ( now / 1000 ) - :start-time ;find differerence between current time and start time
+end
+
+to addTimeToList :time
+  make "time-list (se :time-list :time) 
+end
+
+to addADCToList :adc
+  make "adc-list (se :adc-list :adc) 
+end
+
+to collect-packet
+output rl $1fc0 30
+end
+
+to save-data 

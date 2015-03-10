@@ -1,0 +1,41 @@
+;ulogo file for $projectName
+
+constants [[rpacket $1fc0]]
+
+ constants [[rpacket $1fc0]]
+
+ to ul-power
+	 init-pins 
+	 redon
+	 wait 10
+	 redoff
+ end
+ 
+ to ul-init 
+	 redon	
+	 wait 10	 
+	 redoff
+     
+ end
+ 
+ to ul-go 
+ 	 redon
+	 wait 10
+	 redoff
+
+	 loop
+	 [
+		redon	 	
+		collect-data
+		wait 10 
+		redoff
+	 	wait 100
+	 ]
+ 
+ end
+
+ to collect-data
+ 	init-packet 55 ;55 represents pad ADC reading	
+ 	fprint readA3 ;pads
+ 	add-checksum
+ end

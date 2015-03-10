@@ -1,0 +1,93 @@
+;
+; These constants define variables to reference various parts of the ADC12 12-bit analog-to-digital device on the 
+; MSP430F2410 micro controller. We have to define the ADC device itself, as well as various controls for it. 
+; See the MSP430F2410 spec sheet for detailed descriptions of ports and the values written to them when the
+; device is configured.
+;
+; The ADC12 device is located at port 6, and our app board uses channel (or pin) numbers 3 and 4 on that port.
+;
+constants [
+  [ADC12CTL0 $1A0][ADC12CTL1 $1A2][ADC12MEM0 $140]
+  [ADC12IE $1A6][ADC12MCTL0 $080][ADC12IFG $1A4]
+  [ADC12IV $1A8]
+
+  [MSC $80][REF2_5V $40][REFON $20][ADC12ON $10][ENC $2][ADC12SC $1][SHT0_8 $100][ADC12CLK_16 $200][ADC12CLK_4 $0][ADC12CLK_256 $800]
+  [SHP $200][SHS_ADC12SC $0][ASC12SSEL_SMCLK $18][CONSEQ_SINGLE $0]
+  [EOS $80]
+
+  [p6sel $37]
+]
+
+; 
+; The setup-adc word configures the device and makes it available for use.
+;
+to setup-adc :channel
+
+  write ADC12CTL0 ADC12CLK_16 + ADC12ON                                 ; $210 16 ADC12CLK cycles, ADC12on
+  write ADC12CTL1 SHS_ADC12SC + SHP + ASC12SSEL_SMCLK + CONSEQ_SINGLE   ; $218  SAMPCON sourced samp timer, ADC12OSC, single channel
+  write ADC12MCTL0 (:channel + EOS) ; ref AVcc & AVss, channel A0
+  bsetb p6sel (lsh $1 :channel)                                         ;init special function for ADC12
+end
+take
+;
+; The read-adc word reads the voltage on the configured device.
+;
+to read-adc
+  bset ADC12CTL0 (ENC + ADC12SC); $3 start sample
+  mwait 1          ; wait for sample
+  bclr ADC12CTL0 (ENC + ADC12SC); $3   turn off enable
+  output read ADC12MEM0                                                 
+end
+	
+;
+; This word shuts down the ADC device.
+;
+to adcOff
+  write ADC12CTL0 $0
+end
+
+;
+; This word selects the ADC device on pin three of the app board, labelled A0. It then reads the voltage on that pin
+; and outputs the ADC value to the calling function.
+;
+
+to readA0 
+  setup-adc 3
+  let [adc 0]
+  make "adc read-adc
+  output :adc
+end
+
+to readA1
+  setup-adc 4
+  let [adc 0]
+  make "adc read-adc
+  output :adc
+end
+
+to readA2
+  setup-adc 5
+  let [adc 0]
+  make "adc read-adc
+  output :adc
+end
+
+to readA3
+  setup-adc 6
+  let [adc 0]
+  make "adc read-adc
+  output :adc
+end
+
+global [tsh0 tsl0]
+
+to Xreset-time
+ settsh0 timestamph
+ settsl0 timestampl
+end
+
+to Xtime
+output (10 * (timestamph - tsh0)) + ((timestampl - tsl0) / 1000)
+end
+
+
