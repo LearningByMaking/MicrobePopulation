@@ -1,7 +1,5 @@
 ;ulogo file for $projectName
 
-constants [[rpacket $1fc0]]
-
  constants [[rpacket $1fc0]]
 
  to ul-power
@@ -12,7 +10,7 @@ constants [[rpacket $1fc0]]
  end
  
  to ul-init 
-	 redon	
+	 redon	         
 	 wait 10	 
 	 redoff
      
@@ -34,8 +32,13 @@ constants [[rpacket $1fc0]]
  
  end
 
+
  to collect-data
- 	init-packet 55 ;55 represents pad ADC reading	
- 	fprint readA3 ;pads
+ 	init-packet 55 ;55 represents pad and temp ADC reading	
+ 	fprint readADC 7 ;pads
+        fprint readADC 6 ;temp 
  	add-checksum
  end
+
+
+

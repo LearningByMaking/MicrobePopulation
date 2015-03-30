@@ -3,7 +3,6 @@
 
 to microPop
  	print "|starting microPop| 
-        set-calibration
  	init-microPop
  	loop 
  	[
@@ -91,18 +90,5 @@ end
 
 to collect-packet
 output rl $1fc0 30
-end
-
-to set-calibration
-  make "temp_cal [500 22.0 1000 50.0]     ; pairs (adc,temp)
-end
-
-to calibrate :n :m
-  let [adc0 nth 0 :m]
-  let [adc1 nth 2 :m]
-  let [val0 nth 1 :m]
-  let [val1 nth 3 :m]
-  let [slope (:val1 - :val0) / (:adc1 - :adc0)] ;later find the correct pair - assume one point for now
-  output  ((:n - :adc0) * :slope) + :val0
 end
 

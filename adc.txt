@@ -25,8 +25,8 @@ to setup-adc :channel
 
   write ADC12CTL0 ADC12CLK_16 + ADC12ON                                 ; $210 16 ADC12CLK cycles, ADC12on
   write ADC12CTL1 SHS_ADC12SC + SHP + ASC12SSEL_SMCLK + CONSEQ_SINGLE   ; $218  SAMPCON sourced samp timer, ADC12OSC, single channel
-  write ADC12MCTL0 (:channel + EOS) ; ref AVcc & AVss, channel A0
-  bsetb p6sel (lsh $1 :channel)                                         ;init special function for ADC12
+  write ADC12MCTL0 (:channel + EOS)                                     ; ref AVcc & AVss, channel A0
+  bsetb p6sel (lsh $1 :channel)                                         ; init special function for ADC12
 end
 take
 ;
@@ -51,33 +51,13 @@ end
 ; and outputs the ADC value to the calling function.
 ;
 
-to readA0 
-  setup-adc 3
+to readADC :n
+  setup-adc :n
   let [adc 0]
   make "adc read-adc
   output :adc
 end
-
-to readA1
-  setup-adc 4
-  let [adc 0]
-  make "adc read-adc
-  output :adc
-end
-
-to readA2
-  setup-adc 5
-  let [adc 0]
-  make "adc read-adc
-  output :adc
-end
-
-to readA3
-  setup-adc 6
-  let [adc 0]
-  make "adc read-adc
-  output :adc
-end
+setupd
 
 global [tsh0 tsl0]
 
@@ -90,4 +70,14 @@ to Xtime
 output (10 * (timestamph - tsh0)) + ((timestampl - tsl0) / 1000)
 end
 
+to adc-diag  
+  let [index 0]
+  repeat 10 
+  [
+    print :index 
+    print readADC :index
+
+    let[index :index + 1]	
+  ]
+end
 
