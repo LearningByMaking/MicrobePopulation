@@ -58,14 +58,14 @@ to process-data-packet
   make "time elapsedTime 
   print-packet 
   print (se "|adc:| :adc "|time:| :time) 
-  addTimeToList :time 
-  addADCToList :adc 
+  ;addTimeToList :time 
+  ;addADCToList :adc 
 
   prfopen "data.txt
   prfprint (se :adc :time)
   prfclose
 
-  plot-adc 
+  ;plot-adc 
 end
 
 to plot-adc

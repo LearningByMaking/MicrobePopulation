@@ -36,6 +36,6 @@ constants [[rpacket $1fc0]]
 
  to collect-data
  	init-packet 55 ;55 represents pad ADC reading	
- 	fprint readA3 ;pads
+ 	fprint readADC 3 ;pads
  	add-checksum
  end
