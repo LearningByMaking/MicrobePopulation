@@ -13,6 +13,7 @@ to microPop
  
 to init-microPop
   init-hardware 
+  init-calibration
   make "check 0 
   make "oldcheck 0 
   make "time-list [] 
@@ -30,6 +31,11 @@ to init-hardware
  	ul-go
  	wait 15
 
+end
+
+to init-calibration
+  make "temp_cal [632 5 1409 66]     ; pairs (adc,temp)
+  make "volt_cal [0 0 4095 3.3]           ; pairs (adc,volt)
 end
 
 to see-packet
@@ -54,18 +60,29 @@ to process-header
 end
 
 to process-data-packet
-  make "adc wnth 4 :packet-bytes 	
+  make "adc wnth 4 :packet-bytes 
+  make "adc calibrate :adc :volt_cal	
+  make "temp wnth 5 :packet-bytes 
+  make "temp calibrate :temp :temp_cal		
   make "time elapsedTime 
   print-packet 
-  print (se "|adc:| :adc "|time:| :time) 
-  addTimeToList :time 
-  addADCToList :adc 
-
+  print (se "|adc:| :adc "|temp:| :temp "|time:| :time) 
   prfopen "data.txt
-  prfprint (se :adc :time)
+  prfprint (se :adc :temp :time)
   prfclose
 
-  plot-adc 
+  ;addTimeToList :time 
+  ;addADCToList :adc 
+  ;plot-adc 
+end
+
+to calibrate :n :m
+  let [adc0 nth 0 :m]
+  let [adc1 nth 2 :m]
+  let [val0 nth 1 :m]
+  let [val1 nth 3 :m]
+  let [slope (:val1 - :val0) / (:adc1 - :adc0)] 
+  output  ((:n - :adc0) * :slope) + :val0
 end
 
 to plot-adc

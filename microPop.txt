@@ -1,6 +1,12 @@
 ;ulogo file for $projectName
 
- constants [[rpacket $1fc0]]
+ constants 
+[
+  	[rpacket $1fc0]
+  	[minTemp 500]
+  	[maxTemp 550]
+]
+
 
  to ul-power
 	 init-pins 
@@ -27,10 +33,18 @@
 		collect-data
 		wait 10 
 		redoff
+	  	if(readADC 6 > maxTemp)[heaterOff]
+          	if(readADC 6 < minTemp)[heaterOn]
 	 	wait 100
 	 ]
  
  end
+
+to heaterOn
+end
+
+to heaterOff
+end
 
 
  to collect-data
@@ -39,6 +53,7 @@
         fprint readADC 6 ;temp 
  	add-checksum
  end
+
 
 
 
