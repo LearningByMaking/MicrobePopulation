@@ -34,8 +34,8 @@ to init-hardware
 end
 
 to init-calibration
-  make "temp_cal [632 5 1409 66]     ; pairs (adc,temp)
-  make "volt_cal [0 0 4095 3.3]           ; pairs (adc,volt)
+  make "temp_cal [662 7 1571 83]     ; pairs (adc,temp)
+  make "volt_cal [0 0 4095 3.3]      ; pairs (adc,volt)
 end
 
 to see-packet
@@ -81,6 +81,15 @@ to calibrate :n :m
   let [adc1 nth 2 :m]
   let [val0 nth 1 :m]
   let [val1 nth 3 :m]
+  let [slope (:val1 - :val0) / (:adc1 - :adc0)] 
+  output  ((:n - :adc0) * :slope) + :val0
+end
+
+to valueToADC :n :m
+  let [val0 nth 0 :m]
+  let [val1 nth 2 :m]
+  let [adc0 nth 1 :m]
+  let [adc1 nth 3 :m]
   let [slope (:val1 - :val0) / (:adc1 - :adc0)] 
   output  ((:n - :adc0) * :slope) + :val0
 end

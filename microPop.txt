@@ -3,8 +3,8 @@
  constants 
 [
   	[rpacket $1fc0]
-  	[minTemp 500]
-  	[maxTemp 550]
+  	[minTemp 1070]
+  	[maxTemp 1100]
 ]
 
 
@@ -16,41 +16,64 @@
  end
  
  to ul-init 
-	 redon	         
-	 wait 10	 
-	 redoff
+	redon	
+	greenon 
+	dp4enable
+	dp4output
+	dp4off        
+	wait 10	 
+	redoff
+	greenoff
      
  end
  
  to ul-go 
- 	 redon
+ 	 greenon 
 	 wait 10
-	 redoff
-
+	 greenoff
+         wait 10
 	 loop
 	 [
-		redon	 	
+		blueon	
 		collect-data
 		wait 10 
-		redoff
-	  	if(readADC 6 > maxTemp)[heaterOff]
-          	if(readADC 6 < minTemp)[heaterOn]
+		blueoff
 	 	wait 100
 	 ]
  
  end
 
 to heaterOn
+   redon
+   dp4on
 end
 
 to heaterOff
+   redoff
+   dp4off
 end
 
+to calibrate
+   let [value 0]
+   repeat 10 
+   [ 
+      let [adc readADC 6]
+      let [value (:value + :adc) ]       
+      print :adc
+      wait 10 
+   ]
+   let [value :value / 10 ]
+   print 00000 
+   print :value
+end
 
  to collect-data
  	init-packet 55 ;55 represents pad and temp ADC reading	
- 	fprint readADC 7 ;pads
-        fprint readADC 6 ;temp 
+ 	let [temp readADC 6]
+        fprint readADC 7 ;pads
+        fprint :temp ;temp 
+	if(:temp > maxTemp)[heaterOff]
+  	if(:temp < minTemp)[heaterOn]
  	add-checksum
  end
 
