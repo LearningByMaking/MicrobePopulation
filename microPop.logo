@@ -12,8 +12,8 @@ to microPop
  end
  
 to init-microPop
-  init-hardware 
   init-calibration
+  init-hardware 
   make "check 0 
   make "oldcheck 0 
   make "time-list [] 
@@ -26,11 +26,25 @@ to init-hardware
  	stopvm ;stop vm makes sure the board is not running
  	ul-power
  	wait 15
- 	ul-init
+ 	ul-init 
+        setMaxTemp 32
+	setMintemp 30	
+	wait 15	
+	ul-go
  	wait 15
- 	ul-go
- 	wait 15
+	
+end 
 
+to setMaxTemp :x
+	let [maxTemp valueToADC :x :temp_cal]
+	ul-run[set-maxTemp maxTemp]
+        print se "|Max Temp set to | :x
+end
+
+to setMintemp :x
+	let [minTemp valueToADC :x :temp_cal]
+	ul-run[set-minTemp minTemp]
+        print se "|Min Temp set to | :x
 end
 
 to init-calibration

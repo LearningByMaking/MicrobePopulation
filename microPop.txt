@@ -1,12 +1,16 @@
 ;ulogo file for $projectName
 
- constants 
-[
-  	[rpacket $1fc0]
-  	[minTemp 1070]
-  	[maxTemp 1100]
-]
+ constants [ [rpacket $1fc0] ]
+ global [minTemp maxTemp]
 
+to set-minTemp :n
+	setminTemp :n	
+
+end
+
+to set-maxTemp :n
+	setmaxTemp :n
+end
 
  to ul-power
 	 init-pins 
@@ -53,22 +57,8 @@ to heaterOff
    dp4off
 end
 
-to calibrate
-   let [value 0]
-   repeat 10 
-   [ 
-      let [adc readADC 6]
-      let [value (:value + :adc) ]       
-      print :adc
-      wait 10 
-   ]
-   let [value :value / 10 ]
-   print 00000 
-   print :value
-end
-
  to collect-data
- 	init-packet 55 ;55 represents pad and temp ADC reading	
+ 	init-packet 55 
  	let [temp readADC 6]
         fprint readADC 7 ;pads
         fprint :temp ;temp 
