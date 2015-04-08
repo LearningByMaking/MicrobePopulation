@@ -3,14 +3,6 @@
  constants [ [rpacket $1fc0] ]
  global [minTemp maxTemp]
 
-to set-minTemp :n
-	setminTemp :n	
-
-end
-
-to set-maxTemp :n
-	setmaxTemp :n
-end
 
  to ul-power
 	 init-pins 
@@ -24,7 +16,12 @@ end
 	greenon 
 	dp4enable
 	dp4output
-	dp4off        
+	dp4off  
+        dp2enable
+	dp2output
+	dp2off  
+        setminTemp 1000
+        setmaxTemp 1100
 	wait 10	 
 	redoff
 	greenoff
@@ -47,25 +44,69 @@ end
  
  end
 
-to heaterOn
-   redon
+
+to collect-data
+   init-packet 55 
+   
+   let [controlTemp readControlTemp]
+   regulateControlTemp :controlTemp
+   
+   let [experimentTemp readExperimentTemp]
+   regulateExperimentTemp :experimentTemp
+   
+   fprint :controlTemp
+   fprint :experimentTemp
+   add-checksum
+end
+
+to regulateControlTemp :temp
+   if(:temp > maxTemp)[controlHeaterOff]
+   if(:temp < minTemp)[controlHeaterOn]
+end
+
+to readControlTemp
+   output readADC 7
+end
+
+to controlHeaterOn   
+   dp2on
+end
+
+to controlHeaterOff   
+   dp2off
+end
+
+to regulateExperimentTemp :temp
+   if(:temp > maxTemp)[experimentHeaterOff]
+   if(:temp < minTemp)[experimentHeaterOn]
+end
+
+to readExperimentTemp
+   output readADC 6
+end
+
+to experimentHeaterOn   
    dp4on
 end
 
-to heaterOff
-   redoff
+to experimentHeaterOff   
    dp4off
 end
 
- to collect-data
- 	init-packet 55 
- 	let [temp readADC 6]
-        fprint readADC 7 ;pads
-        fprint :temp ;temp 
-	if(:temp > maxTemp)[heaterOff]
-  	if(:temp < minTemp)[heaterOn]
- 	add-checksum
- end
+to calibrateADC :n 
+   let [total 0]
+   let [sample 10]
+   repeat :sample	
+   [
+     let [adc (readADC :n)]
+     let [total :total + :adc]
+     print :adc      
+     wait 10
+   ]
+   let [total :total / :sample]
+   prs "Average:
+   print :total
+end
 
 
 

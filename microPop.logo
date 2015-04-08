@@ -26,9 +26,7 @@ to init-hardware
  	stopvm ;stop vm makes sure the board is not running
  	ul-power
  	wait 15
- 	ul-init 
-        setMaxTemp 32
-	setMintemp 30	
+ 	ul-init         
 	wait 15	
 	ul-go
  	wait 15
@@ -74,16 +72,16 @@ to process-header
 end
 
 to process-data-packet
-  make "adc wnth 4 :packet-bytes 
-  make "adc calibrate :adc :volt_cal	
-  make "temp wnth 5 :packet-bytes 
-  make "temp calibrate :temp :temp_cal		
+  make "cTemp wnth 4 :packet-bytes 
+  make "cTemp calibrate :cTemp :temp_cal		
+  make "etemp wnth 5 :packet-bytes 
+  make "etemp calibrate :eTemp :temp_cal		
   make "time elapsedTime 
   print-packet 
-  print (se "|adc:| :adc "|temp:| :temp "|time:| :time) 
-  prfopen "data.txt
-  prfprint (se :adc :temp :time)
-  prfclose
+  print (se "|cTemp:| :cTemp "|eTemp:| :eTemp "|time:| :time) 
+  ;prfopen "data.txt
+  ;prfprint (se :adc :temp :time)
+  ;prfclose
 
   ;addTimeToList :time 
   ;addADCToList :adc 

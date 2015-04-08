@@ -24,10 +24,6 @@ write adcctl0 $10
 write adcctl1 $f8
 bset adcae0 1
 bset adcctl0 2
-
-dp4enable
-dp4output
-dp4off
 alloff
 
 end
