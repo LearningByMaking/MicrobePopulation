@@ -5,7 +5,7 @@
 
 
  to ul-power
-	 init-pins 
+	 init-leds
 	 redon
 	 wait 10
 	 redoff
@@ -14,18 +14,18 @@
  to ul-init 
 	redon	
 	greenon 
-	dp4enable
-	dp4output
-	dp4off  
-        dp2enable
-	dp2output
-	dp2off  
-        setminTemp 1000
-        setmaxTemp 1100
+        init-heaters	
+        setminTemp 1050
+        setmaxTemp 1060
 	wait 10	 
 	redoff
 	greenoff
      
+ end
+
+ to init-heaters
+ 	dp3output
+        dp2output
  end
  
  to ul-go 
@@ -47,7 +47,6 @@
 
 to collect-data
    init-packet 55 
-   
    let [controlTemp readControlTemp]
    regulateControlTemp :controlTemp
    
@@ -56,6 +55,9 @@ to collect-data
    
    fprint :controlTemp
    fprint :experimentTemp
+   fprint readControlVoltage
+   fprint readExperimentVoltage
+
    add-checksum
 end
 
@@ -68,12 +70,16 @@ to readControlTemp
    output readADC 7
 end
 
+to readControlVoltage
+   output readADC 5
+end
+
 to controlHeaterOn   
-   dp2on
+   dp3on
 end
 
 to controlHeaterOff   
-   dp2off
+   dp3off
 end
 
 to regulateExperimentTemp :temp
@@ -85,12 +91,16 @@ to readExperimentTemp
    output readADC 6
 end
 
+to readExperimentVoltage
+   output readADC 4
+end
+
 to experimentHeaterOn   
-   dp4on
+   dp2on
 end
 
 to experimentHeaterOff   
-   dp4off
+   dp2off
 end
 
 to calibrateADC :n 

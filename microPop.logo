@@ -33,18 +33,6 @@ to init-hardware
 	
 end 
 
-to setMaxTemp :x
-	let [maxTemp valueToADC :x :temp_cal]
-	ul-run[set-maxTemp maxTemp]
-        print se "|Max Temp set to | :x
-end
-
-to setMintemp :x
-	let [minTemp valueToADC :x :temp_cal]
-	ul-run[set-minTemp minTemp]
-        print se "|Min Temp set to | :x
-end
-
 to init-calibration
   make "temp_cal [662 7 1571 83]     ; pairs (adc,temp)
   make "volt_cal [0 0 4095 3.3]      ; pairs (adc,volt)
@@ -62,9 +50,9 @@ end
 
 to process-header 
   let [nws ((first :packet-bytes) / 2) + 1] 
-  make "check wnth :nws :packet-bytes  
+  make "check wnth :nws :packet-bytes    
   if not (:check = :oldcheck) 
-  [
+  [     
     make "type nth 1 :packet-bytes 
     if (:type = 55) [ process-data-packet ] 
   ]
@@ -75,17 +63,14 @@ to process-data-packet
   make "cTemp wnth 4 :packet-bytes 
   make "cTemp calibrate :cTemp :temp_cal		
   make "etemp wnth 5 :packet-bytes 
-  make "etemp calibrate :eTemp :temp_cal		
+  make "etemp calibrate :eTemp :temp_cal
+  make "cVolt wnth 6 :packet-bytes 
+  make "cVolt calibrate :cVolt :volt_cal	
+  make "eVolt wnth 7 :packet-bytes 
+  make "eVolt calibrate :eVolt :volt_cal			
   make "time elapsedTime 
-  print-packet 
-  print (se "|cTemp:| :cTemp "|eTemp:| :eTemp "|time:| :time) 
-  ;prfopen "data.txt
-  ;prfprint (se :adc :temp :time)
-  ;prfclose
-
-  ;addTimeToList :time 
-  ;addADCToList :adc 
-  ;plot-adc 
+  print (se :cTemp :cVolt :eTemp :eVolt :time) 
+ 
 end
 
 to calibrate :n :m
