@@ -69,7 +69,7 @@ to process-data-packet
   make "eVolt wnth 7 :packet-bytes 
   make "eVolt calibrate :eVolt :volt_cal			
   make "time elapsedTime 
-  print (se :cTemp :cVolt :eTemp :eVolt :time) 
+  print (se :cVolt :eVolt :time) 
  
 end
 
