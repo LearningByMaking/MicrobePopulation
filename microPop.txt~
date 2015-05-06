@@ -14,9 +14,7 @@
  to ul-init 
 	redon	
 	greenon 
-        init-heaters	
-        setminTemp 1170
-        setmaxTemp 1180
+        init-heaters	        
 	wait 10	 
 	redoff
 	greenoff
@@ -24,7 +22,7 @@
  end
 
  to init-heaters
- 	dp3output
+ 	dp8output
         dp2output
  end
  
@@ -35,11 +33,35 @@
          wait 10
 	 loop
 	 [
-		blueon	
-		collect-data
-		wait 10 
-		blueoff
-	 	wait 100
+		setminTemp 1170
+        	setmaxTemp 1180		
+		repeat 180 [
+			blueon	
+			collect-data
+			wait 10 
+			blueoff
+	 		wait 100
+		]
+
+		setminTemp 1170
+        	setmaxTemp 1180		
+		repeat 180 [
+			blueon	
+			collect-data
+			wait 10 
+			blueoff
+	 		wait 100
+		]
+
+		setminTemp 1170
+        	setmaxTemp 1180		
+		repeat 180 [
+			blueon	
+			collect-data
+			wait 10 
+			blueoff
+	 		wait 100
+		]
 	 ]
  
  end
