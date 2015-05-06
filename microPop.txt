@@ -15,8 +15,8 @@
 	redon	
 	greenon 
         init-heaters	
-        setminTemp 1050
-        setmaxTemp 1060
+        setminTemp 1170
+        setmaxTemp 1180
 	wait 10	 
 	redoff
 	greenoff
@@ -24,7 +24,7 @@
  end
 
  to init-heaters
- 	dp3output
+ 	dp8output
         dp2output
  end
  
@@ -48,15 +48,10 @@
 to collect-data
    init-packet 55 
    let [controlTemp readControlTemp]
-   regulateControlTemp :controlTemp
+   regulateControlTemp :controlTemp  
    
-   let [experimentTemp readExperimentTemp]
-   regulateExperimentTemp :experimentTemp
-   
-   fprint :controlTemp
-   fprint :experimentTemp
+   fprint :controlTemp  
    fprint readControlVoltage
-   fprint readExperimentVoltage
 
    add-checksum
 end
@@ -71,15 +66,15 @@ to readControlTemp
 end
 
 to readControlVoltage
-   output readADC 5
+   output readADC 6
 end
 
 to controlHeaterOn   
-   dp3on
+   dp8on
 end
 
 to controlHeaterOff   
-   dp3off
+   dp8off
 end
 
 to regulateExperimentTemp :temp

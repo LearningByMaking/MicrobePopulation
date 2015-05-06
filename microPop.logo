@@ -61,15 +61,11 @@ end
 
 to process-data-packet
   make "cTemp wnth 4 :packet-bytes 
-  make "cTemp calibrate :cTemp :temp_cal		
-  make "etemp wnth 5 :packet-bytes 
-  make "etemp calibrate :eTemp :temp_cal
-  make "cVolt wnth 6 :packet-bytes 
-  make "cVolt calibrate :cVolt :volt_cal	
-  make "eVolt wnth 7 :packet-bytes 
-  make "eVolt calibrate :eVolt :volt_cal			
+  make "cTemp calibrate :cTemp :temp_cal
+  make "cVolt wnth 5 :packet-bytes 
+  make "cVolt calibrate :cVolt :volt_cal	  		
   make "time elapsedTime 
-  print (se :cVolt :eVolt :time) 
+  print (se :cTemp :cVolt :time) 
  
 end
 

@@ -1,0 +1,118 @@
+;ulogo file for $projectName
+
+ constants [ [rpacket $1fc0] ]
+ global [minTemp maxTemp]
+
+
+ to ul-power
+	 init-leds
+	 redon
+	 wait 10
+	 redoff
+ end
+ 
+ to ul-init 
+	redon	
+	greenon 
+        init-heaters	
+        setminTemp 1170
+        setmaxTemp 1180
+	wait 10	 
+	redoff
+	greenoff
+     
+ end
+
+ to init-heaters
+ 	dp3output
+        dp2output
+ end
+ 
+ to ul-go 
+ 	 greenon 
+	 wait 10
+	 greenoff
+         wait 10
+	 loop
+	 [
+		blueon	
+		collect-data
+		wait 10 
+		blueoff
+	 	wait 100
+	 ]
+ 
+ end
+
+
+to collect-data
+   init-packet 55 
+   let [controlTemp readControlTemp]
+   regulateControlTemp :controlTemp  
+   
+   fprint :controlTemp  
+   fprint readControlVoltage
+
+   add-checksum
+end
+
+to regulateControlTemp :temp
+   if(:temp > maxTemp)[controlHeaterOff]
+   if(:temp < minTemp)[controlHeaterOn]
+end
+
+to readControlTemp
+   output readADC 7
+end
+
+to readControlVoltage
+   output readADC 6
+end
+
+to controlHeaterOn   
+   dp8on
+end
+
+to controlHeaterOff   
+   dp8off
+end
+
+to regulateExperimentTemp :temp
+   if(:temp > maxTemp)[experimentHeaterOff]
+   if(:temp < minTemp)[experimentHeaterOn]
+end
+
+to readExperimentTemp
+   output readADC 6
+end
+
+to readExperimentVoltage
+   output readADC 4
+end
+
+to experimentHeaterOn   
+   dp2on
+end
+
+to experimentHeaterOff   
+   dp2off
+end
+
+to calibrateADC :n 
+   let [total 0]
+   let [sample 10]
+   repeat :sample	
+   [
+     let [adc (readADC :n)]
+     let [total :total + :adc]
+     print :adc      
+     wait 10
+   ]
+   let [total :total / :sample]
+   prs "Average:
+   print :total
+end
+
+
+
+
