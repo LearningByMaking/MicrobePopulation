@@ -36,7 +36,7 @@
 		
 		setminTemp 930
         	setmaxTemp 940		
-		repeat 180 [
+		repeat 1800 [
 			blueon	
 			collect-data
 			wait 10 
@@ -46,7 +46,7 @@
 
 		setminTemp 1050
         	setmaxTemp 1060	
-		repeat 180 [
+		repeat 1800 [
 			blueon	
 			collect-data
 			wait 10 
@@ -56,7 +56,7 @@
 
 		setminTemp 1170
         	setmaxTemp 1180		
-		repeat 180 [
+		repeat 1800 [
 			blueon	
 			collect-data
 			wait 10 

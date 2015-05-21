@@ -1,4 +1,4 @@
-;ulogo file for $projectName
+;ulogo file for MicrobePopualtion
 
  constants [ [rpacket $1fc0] ]
  global [minTemp maxTemp]
