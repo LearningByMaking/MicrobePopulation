@@ -32,98 +32,64 @@
 	 greenoff
          wait 10
 	 loop
-	 [
-		
-		setminTemp 930
-        	setmaxTemp 940		
-		repeat 1800 [
-			blueon	
-			collect-data
-			wait 10 
-			blueoff
-	 		wait 100
-		]
-
-		setminTemp 1050
-        	setmaxTemp 1060	
-		repeat 1800 [
-			blueon	
-			collect-data
-			wait 10 
-			blueoff
-	 		wait 100
-		]
-
-		setminTemp 1170
-        	setmaxTemp 1180		
-		repeat 1800 [
-			blueon	
-			collect-data
-			wait 10 
-			blueoff
-	 		wait 100
-		]
-
-		
-
-		
+	 [	
+		blueon	
+		collect-data
+		wait 10 
+		blueoff
+		wait 100		
 	 ]
  
  end
 
 
 to collect-data
-   init-packet 55 
-   let [controlTemp readControlTemp]
-   regulateControlTemp :controlTemp  
+   init-packet 55  
+   fprint readTemperature1  
+   fprint readVoltatge1
+   fprint readTemperature2  
+   fprint readVoltatge2
+   fprint readTemperature3  
+   fprint readVoltatge3
+   fprint readTemperature4  
+   fprint readVoltatge4
    
-   fprint :controlTemp  
-   fprint readControlVoltage
-
    add-checksum
 end
 
-to regulateControlTemp :temp
-   if(:temp > maxTemp)[controlHeaterOff]
-   if(:temp < minTemp)[controlHeaterOn]
-end
 
-to readControlTemp
+to readTemperature1
    output readADC 7
 end
 
-to readControlVoltage
+to readVoltatge1
    output readADC 6
 end
 
-to controlHeaterOn   
-   dp8on
+to readTemperature2
+   output readADC 5
 end
 
-to controlHeaterOff   
-   dp8off
-end
-
-to regulateExperimentTemp :temp
-   if(:temp > maxTemp)[experimentHeaterOff]
-   if(:temp < minTemp)[experimentHeaterOn]
-end
-
-to readExperimentTemp
-   output readADC 6
-end
-
-to readExperimentVoltage
+to readVoltatge2
    output readADC 4
 end
 
-to experimentHeaterOn   
-   dp2on
+to readTemperature3
+   output readADC 3
 end
 
-to experimentHeaterOff   
-   dp2off
+to readVoltatge3
+   output readADC 2
 end
+
+to readTemperature4
+   output readADC 1
+end
+
+to readVoltatge4
+   output readADC 0
+end
+
 
 to calibrateADC :n 
    let [total 0]

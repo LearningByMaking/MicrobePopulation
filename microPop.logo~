@@ -16,10 +16,7 @@ to init-microPop
   init-hardware 
   make "check 0 
   make "oldcheck 0 
-  make "time-list [] 
-  make "adc-list [] 
   make "start-time int ( now / 1000 )  
-
 end
  
 to init-hardware
@@ -60,12 +57,34 @@ to process-header
 end
 
 to process-data-packet
-  make "cTemp wnth 4 :packet-bytes 
-  make "cTemp calibrate :cTemp :temp_cal
-  make "cVolt wnth 5 :packet-bytes 
-  make "cVolt calibrate :cVolt :volt_cal	  		
+  make "Temp1 wnth 4 :packet-bytes 
+  make "Temp1 calibrate :Temp1 :temp_cal
+  make "Volt1 wnth 5 :packet-bytes 
+  make "Volt1 calibrate :Volt1 :volt_cal
+
+  make "Temp2 wnth 6 :packet-bytes 
+  make "Temp2 calibrate :Temp2 :temp_cal
+  make "Volt2 wnth 7 :packet-bytes 
+  make "Volt2 calibrate :Volt2 :volt_cal	  		
+
+  make "Temp3 wnth 8 :packet-bytes 
+  make "Temp3 calibrate :Temp3 :temp_cal
+  make "Volt3 wnth 9 :packet-bytes 
+  make "Volt3 calibrate :Volt3 :volt_cal  
+ 
+  make "Temp4 wnth 10 :packet-bytes 
+  make "Temp4 calibrate :Temp4 :temp_cal
+  make "Volt4 wnth 11 :packet-bytes 
+  make "Volt4 calibrate :Volt4 :volt_cal
+ 
   make "time elapsedTime 
-  print (se :cVolt :eVolt :time) 
+  
+  print (se "Time :time)
+  print (se "Exp_1 :Temp1 :Volt1 )
+  print (se "Exp_2 :Temp2 :Volt2 )
+  print (se "Exp_3 :Temp3 :Volt3 )
+  print (se "Exp_4 :Temp4 :Volt4 ) 
+  print "|__________________________________| 
  
 end
 
