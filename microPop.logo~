@@ -20,14 +20,13 @@ to init-microPop
 end
  
 to init-hardware
- 	stopvm ;stop vm makes sure the board is not running
- 	ul-power
- 	wait 15
- 	ul-init         
-	wait 15	
-	ul-go
- 	wait 15
-	
+   stopvm ;stop vm makes sure the board is not running
+   ul-power
+   wait 15
+   ul-init         
+   wait 15	
+   ul-go
+   wait 15	
 end 
 
 to init-calibration
@@ -57,35 +56,36 @@ to process-header
 end
 
 to process-data-packet
-  make "Temp1 wnth 4 :packet-bytes 
-  make "Temp1 calibrate :Temp1 :temp_cal
+ 
   make "Volt1 wnth 5 :packet-bytes 
-  make "Volt1 calibrate :Volt1 :volt_cal
+  make "Volt1 calibrate :Volt1 :volt_cal  
+  make "Volt2 wnth 6 :packet-bytes 
+  make "Volt2 calibrate :Volt2 :volt_cal  
+  make "Volt3 wnth 7 :packet-bytes 
+  make "Volt3 calibrate :Volt3 :volt_cal
+  make "Volt4 wnth 8 :packet-bytes 
+  make "Volt4 calibrate :Volt4 :volt_cal 
+  make "Volt5 wnth 9 :packet-bytes 
+  make "Volt5 calibrate :Volt5 :volt_cal 
+  make "Volt6 wnth 10 :packet-bytes 
+  make "Volt6 calibrate :Volt6 :volt_cal 
+  make "Volt7 wnth 11 :packet-bytes 
+  make "Volt7 calibrate :Volt7 :volt_cal 
+  make "Volt8 wnth 12 :packet-bytes 
+  make "Volt8 calibrate :Volt8 :volt_cal 
 
-  make "Temp2 wnth 6 :packet-bytes 
-  make "Temp2 calibrate :Temp2 :temp_cal
-  make "Volt2 wnth 7 :packet-bytes 
-  make "Volt2 calibrate :Volt2 :volt_cal	  		
-
-  make "Temp3 wnth 8 :packet-bytes 
-  make "Temp3 calibrate :Temp3 :temp_cal
-  make "Volt3 wnth 9 :packet-bytes 
-  make "Volt3 calibrate :Volt3 :volt_cal  
- 
-  make "Temp4 wnth 10 :packet-bytes 
-  make "Temp4 calibrate :Temp4 :temp_cal
-  make "Volt4 wnth 11 :packet-bytes 
-  make "Volt4 calibrate :Volt4 :volt_cal
- 
   make "time elapsedTime 
   
   print (se "Time :time)
-  print (se "Exp_1 :Temp1 :Volt1 )
-  print (se "Exp_2 :Temp2 :Volt2 )
-  print (se "Exp_3 :Temp3 :Volt3 )
-  print (se "Exp_4 :Temp4 :Volt4 ) 
-  print "|__________________________________| 
- 
+  print (se "Exp1 :Volt1 "V )
+  print (se "Exp2 :Volt2 "V )
+  print (se "Exp3 :Volt3 "V )
+  print (se "Exp4 :Volt4 "V ) 
+  print (se "Exp5 :Volt5 "V )
+  print (se "Exp6 :Volt6 "V )
+  print (se "Exp7 :Volt7 "V )
+  print (se "Exp8 :Volt8 "V ) 
+
 end
 
 to calibrate :n :m

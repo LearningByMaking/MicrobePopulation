@@ -1,9 +1,20 @@
 ;ulogo file for $projectName
 
  constants [ [rpacket $1fc0] ]
- global [minTemp maxTemp]
+ global [minTemp maxTemp UseADC0 UseADC1 UseADC2 UseADC3 UseADC4 UseADC5 UseADC6 UseADC7 MFCSamples MFCPeriod] 
 
-
+ to init-globals
+    setUseADC0 1 ;1 = true, 0 = false
+    setUseADC1 1 ;1 = true, 0 = false
+    setUseADC2 1 ;1 = true, 0 = false
+    setUseADC3 1 ;1 = true, 0 = false
+    setUseADC4 1 ;1 = true, 0 = false
+    setUseADC5 1 ;1 = true, 0 = false
+    setUseADC6 1 ;1 = true, 0 = false
+    setUseADC7 1 ;1 = true, 0 = false
+    setMFCSamples 3
+    setMFCPeriod 1
+ end
  to ul-power
 	 init-leds
 	 redon
@@ -14,17 +25,14 @@
  to ul-init 
 	redon	
 	greenon 
-        init-heaters	        
+ 	init-globals      
 	wait 10	 
 	redoff
 	greenoff
      
  end
 
- to init-heaters
- 	dp8output
-        dp2output
- end
+
  
  to ul-go 
  	 greenon 
@@ -37,7 +45,7 @@
 		collect-data
 		wait 10 
 		blueoff
-		wait 100		
+		wait 6000		
 	 ]
  
  end
@@ -45,50 +53,180 @@
 
 to collect-data
    init-packet 55  
-   fprint readTemperature1  
-   fprint readVoltatge1
-   fprint readTemperature2  
-   fprint readVoltatge2
-   fprint readTemperature3  
-   fprint readVoltatge3
-   fprint readTemperature4  
-   fprint readVoltatge4
-   
+     
    add-checksum
 end
 
+to measureMFC7
+  ifelse (UseADC7) 
+   [ 
+      let [totalValue 0]	
+      repeat MFCSamples 
+      [
+         let[totalValue :totalValue + readMFC7]
+         wait MFCPeriod
+      ]
+         let [averageValue ( :totalValue / MFCSamples )]
+         output :averageValue
+      ]
+   [
+      output 0
+   ]
+end
 
-to readTemperature1
+to readMFC7
    output readADC 7
 end
 
-to readVoltatge1
+to measureMFC6
+  ifelse (UseADC6) 
+   [ 
+      let [totalValue 0]	
+      repeat MFCSamples 
+      [
+         let[totalValue :totalValue + readMFC6]
+         wait MFCPeriod
+      ]
+         let [averageValue ( :totalValue / MFCSamples )]
+         output :averageValue
+      ]
+   [
+      output 0
+   ]
+end
+
+to readMFC6
    output readADC 6
 end
 
-to readTemperature2
+to measureMFC5
+  ifelse (UseADC5) 
+   [ 
+      let [totalValue 0]	
+      repeat MFCSamples 
+      [
+         let[totalValue :totalValue + readMFC5]
+         wait MFCPeriod
+      ]
+         let [averageValue ( :totalValue / MFCSamples )]
+         output :averageValue
+      ]
+   [
+      output 0
+   ]
+end
+
+to readMFC5
    output readADC 5
 end
 
-to readVoltatge2
+to measureMFC4
+  ifelse (UseADC7) 
+   [ 
+      let [totalValue 0]	
+      repeat MFCSamples 
+      [
+         let[totalValue :totalValue + readMFC4]
+         wait MFCPeriod
+      ]
+         let [averageValue ( :totalValue / MFCSamples )]
+         output :averageValue
+      ]
+   [
+      output 0
+   ]
+end
+
+to readMFC4
    output readADC 4
 end
 
-to readTemperature3
+to measureMFC3
+  ifelse (UseADC7) 
+   [ 
+      let [totalValue 0]	
+      repeat MFCSamples 
+      [
+         let[totalValue :totalValue + readMFC3]
+         wait MFCPeriod
+      ]
+         let [averageValue ( :totalValue / MFCSamples )]
+         output :averageValue
+      ]
+   [
+      output 0
+   ]
+end
+
+to readMFC3
    output readADC 3
 end
 
-to readVoltatge3
+to measureMFC2
+  ifelse (UseADC7) 
+   [ 
+      let [totalValue 0]	
+      repeat MFCSamples 
+      [
+         let[totalValue :totalValue + readMFC2]
+         wait MFCPeriod
+      ]
+         let [averageValue ( :totalValue / MFCSamples )]
+         output :averageValue
+      ]
+   [
+      output 0
+   ]
+end
+
+to readMFC2
    output readADC 2
 end
 
-to readTemperature4
+to measureMFC1
+  ifelse (UseADC7) 
+   [ 
+      let [totalValue 0]	
+      repeat MFCSamples 
+      [
+         let[totalValue :totalValue + readMFC1]
+         wait MFCPeriod
+      ]
+         let [averageValue ( :totalValue / MFCSamples )]
+         output :averageValue
+      ]
+   [
+      output 0
+   ]
+end
+
+to readMFC1
    output readADC 1
 end
 
-to readVoltatge4
+to measureMFC0
+  ifelse (UseADC7) 
+   [ 
+      let [totalValue 0]	
+      repeat MFCSamples 
+      [
+         let[totalValue :totalValue + readMFC0]
+         wait MFCPeriod
+      ]
+         let [averageValue ( :totalValue / MFCSamples )]
+         output :averageValue
+      ]
+   [
+      output 0
+   ]
+end
+
+to readMFC0
    output readADC 0
 end
+
+
+
 
 
 to calibrateADC :n 

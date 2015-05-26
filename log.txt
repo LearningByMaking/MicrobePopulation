@@ -44295,3 +44295,134 @@ project "microPop
   Exp4 104.06930693069307 c 1.5343589743589743 V
   __________________________________
 -..
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue May 26 15:41:23 PDT 2015   unix time:  1432680083254
+  Opening Project  microPop
+.print 1234
+  1234
+.clear-display
+.cUp 1234
+  [1234A
+print 1234
+  1234
+.clear-display
+.clear-screen
+  I don't know how to clear-screen
+.clr-screen
+  clr-screen needs more inputs
+.clr-screen 10
+  I don't know how to clr-line in clr-screen
+.clr-screen 10
+  I don't know how to clr-line in clr-screen
+.rr
+  Opening Project  microPop
+  project reloaded
+.clr-screen 10
+  I don't know how to clr-line in clr-screen
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue May 26 15:43:26 PDT 2015   unix time:  1432680206339
+  Opening Project  microPop
+.clr-screen 10
+  I don't know how to clr-line in clr-screen
+.clr-screen 10
+  I don't know how to clr-line in clr-screen
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue May 26 15:44:09 PDT 2015   unix time:  1432680249460
+  Opening Project  microPop
+.clr-screen 10
+  I don't know how to clr-line in clr-screen
+.clr-line 1
+  I don't know how to clr-line
+  Welcome to Logo
+.rr
+  I don't know how to .rr
+project "microPop
+  Start Project:  microPop     Tue May 26 15:45:09 PDT 2015   unix time:  1432680309461
+  Opening Project  microPop
+.clr-line 10
+  I don't know how to clr-line
+.repeat 10 [print 1]
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+.repeat 10 [print 1 wait 10]
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+.repeat 10 [cUp print 1 wait 10]
+  1
+  print didn't output to cUp
+.repeat 10 [cUp 1 wait 10]
+  [1A
+  [1A
+  [1A
+  [1A
+  [1A
+  [1A
+  [1A
+  [1A
+  [1A
+  [1A
+.repeat 10 [print 1 cUp 2 wait 10]
+  1
+  [2A
+  1
+  [2A
+  1
+  [2A
+  1
+  [2A
+  1
+  [2A
+  1
+  [2A
+  1
+  [2A
+  1
+  [2A
+  1
+  [2A
+  1
+  [2A
+let[i 0]
+  let can only be used in a procedure
+make "i 0
+  i isn't a local
+global i
+  you don't say what to do with global
+.rr
+  Opening Project  microPop
+  project reloaded
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue May 26 16:06:25 PDT 2015   unix time:  1432681585608
+  Opening Project  microPop
+.compile
+  Compiling...
+  TemperaturePeriod undefined in measureMFC7
+.compile
+  Compiling...
+  1417 bytes
+.compile
+  Compiling...
+  readADC4 undefined in readMFC4
+.compile
+  Compiling...
+  1851 bytes
