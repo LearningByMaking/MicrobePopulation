@@ -1,144 +1,235 @@
-;ulogo file for MicrobePopualtion
+;ulogo file for MFC
+;ADC 7 = Power line from mudwatt
+;ADC 6 = Date line from temp sensor
+;DP8 = control line for heater relay
 
- constants [ [rpacket $1fc0] ]
- global [minTemp maxTemp]
+constants [ [rpacket $1fc0] ]
+global 
+[
+	StartTemp 
+	StopTemp 
+	Index 
+	StepSize
+	EquilibriumTime 
+	CollectionPeriod 
+	CoolingPeriod 
+	HeatingPeriod
+	TemperatureSamples
+	TemperaturePeriod
+	MFCSamples
+	MFCPeriod
+	DebugMode
+]
 
+to init-globals
 
- to ul-power
-	 init-leds
-	 redon
-	 wait 10
-	 redoff
- end
+	;the time (in seconds) we wait after reaching the target temperature before starting to collect data  
+	setEquilibriumTime 30
+
+	;the time (in seconds) between collecting data points
+	setCollectionPeriod 10  
+
+	;the time (in seconds) we wait before checking the temperature while heating
+	setHeatingPeriod 10
+		
+	;the time (in seconds) we wait before checking the temperature while heating
+	setCoolingPeriod 10
+
+	;the number of samples to take when reading a temperature
+	setTemperatureSamples 5
+
+	;the time (in seconds) to wait between temperature readings
+	setTemperaturePeriod 1
+
+	;the number of samples to take when reading a temperature
+	setMFCSamples 5
+
+	;the time (in seconds) to wait between temperature readings
+	setMFCPeriod 1
+
+	;the amount (in ADU) to increase the temperature between readings
+	setStepSize 50
+
+	;the value that presents the number of increments of temperature tested so far. This should always start at zero
+	setIndex 0
+
+	;the starting temperature as read from the sensor
+	setStartTemp measureTemperature
+
+	;the maximum temperature the experiment will be brought to
+	setStopTemp 1200 
+
+	;controls whether debug messages are printed to the console by uLogo 1=true 0=false
+	setDebugMode 0
+end
+
+to ul-power
+ 	init-leds
+ 	redon
+ 	wait 10
+ 	redoff
+end
  
- to ul-init 
+to ul-init 
+	yellowOn
+   init-heater
+	init-globals
+	wait 10	 
+	yellowOff    
+end
+
+to init-heater
+ 	dp8output
+	dp8off
+end
+ 
+to ul-go 
+	greenon 
+	wait 10
+	greenoff
+	wait 10
+	loop
+	[	
+		let[targetTemp StartTemp + Index]		
+		heatToTemperature :targetTemp
+		collectDataAtTemperature :targetTemp
+		setIndex Index + StepSize
+		if(Index > StopTemp)
+		[
+			stop
+		]
+	]
+end
+
+
+to collectDataAtTemperature :targetTemp
+	waitForEquilibrium :targetTemp
+	greenOn
+	repeat 3
+	[
+		collectDataPoint
+		regulateTemp :targetTemp
+		wait 100
+	]
+	greenOff
+end
+
+to waitForEquilibrium :targetTemp
+	yellowOn	
+	repeat ( EquilibriumTime / 100 ) 
+	[	
+		regulateTemp :targetTemp
+		wait 100
+	]
+	yellowOff
+end
+
+to collectDataPoint
+	blueon	
+	init-packet 55
+	fprint measureTemperature
+	fprint measureMFC
+	add-checksum		
+	wait 10 
+	blueoff
+end
+
+to regulateTemp :targetTemp
+	let [temp measureTemperature]
+	if(:temp > :targetTemp) 
+	[
+		heaterOff
+	]
+	if(:temp < :targetTemp)
+	[
+		heaterOn
+	]
+end
+
+to heatToTemperature :target
+	redon	
+	loop 
+	[
+		let [temp measureTemperature]
+      if(:temp < :target)
+		[
+			heaterOn			
+		]
+
+		if(:temp > :target)
+		[				
+			heaterOff
+			redoff
+			stop			
+		]
+		wait (HeatingPeriod * 10)
+	]
+	
+end
+
+to coolToTemperature :target
+	heaterOff
+	loop 
+	[
+		let [temp measureTemperature]      
+
+		if(:temp < :target)
+		[		
+			stop			
+		]
+		wait (CoolingPeriod * 10)
+	]
+end
+
+to measureTemperature
+	let [totalValue 0]	
+	repeat TemperatureSamples 
+	[
+   	let[totalValue :totalValue + readTemperature]
+		wait TemperaturePeriod
+	]
+	let [averageValue ( :totalValue / TemperatureSamples )]
+	output :averageValue
+end
+
+to readTemperature
+	output readADC 6
+end
+
+to measureMFC
+	let [totalValue 0]	
+	repeat MFCSamples 
+	[
+   	let[totalValue :totalValue + readMFC]
+		wait MFCPeriod
+	]
+	let [averageValue ( :totalValue / MFCSamples )]
+	output :averageValue
+end
+
+to readMFC
+	output readADC 7
+end
+
+to heaterOn
+	dp8on
+end
+
+to heaterOff
+	dp8off
+end
+
+to yellowOn
 	redon	
 	greenon 
-        init-heaters	        
-	wait 10	 
+end
+
+to yellowOff
 	redoff
-	greenoff
-     
- end
-
- to init-heaters
- 	dp8output
-        dp2output
- end
- 
- to ul-go 
- 	 greenon 
-	 wait 10
-	 greenoff
-         wait 10
-	 loop
-	 [
-		
-		setminTemp 930
-        	setmaxTemp 940		
-		repeat 1800 [
-			blueon	
-			collect-data
-			wait 10 
-			blueoff
-	 		wait 100
-		]
-
-		setminTemp 1050
-        	setmaxTemp 1060	
-		repeat 1800 [
-			blueon	
-			collect-data
-			wait 10 
-			blueoff
-	 		wait 100
-		]
-
-		setminTemp 1170
-        	setmaxTemp 1180		
-		repeat 1800 [
-			blueon	
-			collect-data
-			wait 10 
-			blueoff
-	 		wait 100
-		]
-
-		
-
-		
-	 ]
- 
- end
-
-
-to collect-data
-   init-packet 55 
-   let [controlTemp readControlTemp]
-   regulateControlTemp :controlTemp  
-   
-   fprint :controlTemp  
-   fprint readControlVoltage
-
-   add-checksum
+	greenoff 
 end
 
-to regulateControlTemp :temp
-   if(:temp > maxTemp)[controlHeaterOff]
-   if(:temp < minTemp)[controlHeaterOn]
-end
 
-to readControlTemp
-   output readADC 7
-end
-
-to readControlVoltage
-   output readADC 6
-end
-
-to controlHeaterOn   
-   dp8on
-end
-
-to controlHeaterOff   
-   dp8off
-end
-
-to regulateExperimentTemp :temp
-   if(:temp > maxTemp)[experimentHeaterOff]
-   if(:temp < minTemp)[experimentHeaterOn]
-end
-
-to readExperimentTemp
-   output readADC 6
-end
-
-to readExperimentVoltage
-   output readADC 4
-end
-
-to experimentHeaterOn   
-   dp2on
-end
-
-to experimentHeaterOff   
-   dp2off
-end
-
-to calibrateADC :n 
-   let [total 0]
-   let [sample 10]
-   repeat :sample	
-   [
-     let [adc (readADC :n)]
-     let [total :total + :adc]
-     print :adc      
-     wait 10
-   ]
-   let [total :total / :sample]
-   prs "Average:
-   print :total
-end
 
 
 

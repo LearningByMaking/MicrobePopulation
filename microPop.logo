@@ -1,4 +1,4 @@
-;jlogo file for BasicBoard written by: ANONYMOUS
+;jlogo file for MFC
 
 
 to microPop
@@ -7,19 +7,20 @@ to microPop
  	loop 
  	[
  		see-packet 
- 		wait 150 
+ 		wait 10 
  	]
  end
  
 to init-microPop
-  init-calibration
-  init-hardware 
-  make "check 0 
-  make "oldcheck 0 
-  make "time-list [] 
-  make "adc-list [] 
-  make "start-time int ( now / 1000 )  
-
+  	init-calibration
+  	init-hardware 
+  	
+	make "check55 0 
+  	make "oldcheck55 0 
+ 	
+	make "check20 0 
+ 	make "oldcheck20 0
+ 
 end
  
 to init-hardware
@@ -29,9 +30,8 @@ to init-hardware
  	ul-init         
 	wait 15	
 	ul-go
- 	wait 15
-	
-end 
+ 	wait 15	
+end calibra
 
 to init-calibration
   make "temp_cal [662 7 1571 83]     ; pairs (adc,temp)
@@ -39,34 +39,50 @@ to init-calibration
 end
 
 to see-packet
-  make "packet-bytes collect-packet  
-  if (count :packet-bytes) > 0 
-  [    
-    process-header     
-  ]
-    
+ 	make "packet-bytes collect-packet  	
+	process-header    
 end
 
 
 to process-header 
-  let [nws ((first :packet-bytes) / 2) + 1] 
-  make "check wnth :nws :packet-bytes    
-  if not (:check = :oldcheck) 
-  [     
-    make "type nth 1 :packet-bytes 
-    if (:type = 55) [ process-data-packet ] 
-  ]
-  make "oldcheck :check 
+  	make "type nth 1 :packet-bytes 	
+   if (:type = 55) [ checksum55 :packet-bytes ] 
+	;if (:type = 20) [ checksum20 :packet-bytes ] 
+end
+
+to checksum55 :packet-bytes
+	let [nws ((first :packet-bytes) / 2) + 1] 
+  	make "check55 wnth :nws :packet-bytes 
+ 	if not (:check55 = :oldcheck55)
+	[
+		process-data-packet
+	]  
+	make "oldcheck55 :check55  
+end
+
+to checksum20 :packet-bytes
+	let [nws ((first :packet-bytes) / 2) + 1] 
+  	make "check20 wnth :nws :packet-bytes 
+ 	if not (:check20 = :oldcheck20)
+	[
+		process-status-packet
+	]  
+	make "oldcheck20 :check20 
 end
 
 to process-data-packet
-  make "cTemp wnth 4 :packet-bytes 
-  make "cTemp calibrate :cTemp :temp_cal
-  make "cVolt wnth 5 :packet-bytes 
-  make "cVolt calibrate :cVolt :volt_cal	  		
-  make "time elapsedTime 
-  print (se :cTemp :cVolt :time) 
- 
+  	make "Temp wnth 4 :packet-bytes 
+  	make "Temp calibrate :Temp :temp_cal
+  	make "Volt wnth 5 :packet-bytes 
+  	make "Volt calibrate :Volt :volt_cal	  		 
+  	print (se "DATA :Temp :Volt)  
+end
+
+to process-status-packet
+	make "Message wnth 4 :packet-bytes   
+  	make "Variable wnth 5 :packet-bytes 
+	make "Value wnth 6 :packet-bytes  	 
+  	print (se "STATUS :Message :Variable :Value)  
 end
 
 to calibrate :n :m
@@ -87,25 +103,6 @@ to valueToADC :n :m
   output  ((:n - :adc0) * :slope) + :val0
 end
 
-to plot-adc
-   x-data "|Elapsed Time (seconds)| :time-list ;
-   y-data "|ADC reading| :adc-list 
-   plot 2 
-   display "|-geometry 600x400+1000+100| 
-  
-end
-
-to elapsedTime
-   output  int ( now / 1000 ) - :start-time ;find differerence between current time and start time
-end
-
-to addTimeToList :time
-  make "time-list (se :time-list :time) 
-end
-
-to addADCToList :adc
-  make "adc-list (se :adc-list :adc) 
-end
 
 to collect-packet
 output rl $1fc0 30
