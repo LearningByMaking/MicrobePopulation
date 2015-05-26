@@ -94,8 +94,10 @@ to ul-go
 		heatToTemperature :targetTemp
 		collectDataAtTemperature :targetTemp
 		setIndex Index + StepSize
-		if(Index > StopTemp)
+		if(MeasureTemperature > StopTemp)
 		[
+			heaterOff
+			alloff			
 			stop
 		]
 	]
