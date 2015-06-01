@@ -57,7 +57,8 @@ to readADC :n
   make "adc read-adc
   output :adc
 end
-setupd
+
+;setupd
 
 global [tsh0 tsl0]
 

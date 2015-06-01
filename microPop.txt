@@ -24,10 +24,10 @@ global
 to init-globals
 
 	;the time (in seconds) we wait after reaching the target temperature before starting to collect data  
-	setEquilibriumTime 30
+	setEquilibriumTime 10
 
 	;the time (in seconds) between collecting data points
-	setCollectionPeriod 10  
+	setCollectionPeriod 60  
 
 	;the time (in seconds) we wait before checking the temperature while heating
 	setHeatingPeriod 10
@@ -36,13 +36,13 @@ to init-globals
 	setCoolingPeriod 10
 
 	;the number of samples to take when reading a temperature
-	setTemperatureSamples 5
+	setTemperatureSamples 3
 
 	;the time (in seconds) to wait between temperature readings
 	setTemperaturePeriod 1
 
 	;the number of samples to take when reading a temperature
-	setMFCSamples 5
+	setMFCSamples 1
 
 	;the time (in seconds) to wait between temperature readings
 	setMFCPeriod 1
@@ -57,7 +57,7 @@ to init-globals
 	setStartTemp measureTemperature
 
 	;the maximum temperature the experiment will be brought to
-	setStopTemp 1200 
+	setStopTemp 1100 
 
 	;controls whether debug messages are printed to the console by uLogo 1=true 0=false
 	setDebugMode 0
@@ -90,7 +90,7 @@ to ul-go
 	wait 10
 	loop
 	[	
-		let[targetTemp StartTemp + Index]		
+		let[targetTemp StartTemp + Index]
 		heatToTemperature :targetTemp
 		collectDataAtTemperature :targetTemp
 		setIndex Index + StepSize
@@ -111,17 +111,17 @@ to collectDataAtTemperature :targetTemp
 	[
 		collectDataPoint
 		regulateTemp :targetTemp
-		wait 100
+		wait 60
 	]
 	greenOff
 end
 
 to waitForEquilibrium :targetTemp
 	yellowOn	
-	repeat ( EquilibriumTime / 100 ) 
+	repeat ( EquilibriumTime / 10 ) 
 	[	
 		regulateTemp :targetTemp
-		wait 100
+		wait 10
 	]
 	yellowOff
 end
@@ -129,8 +129,10 @@ end
 to collectDataPoint
 	blueon	
 	init-packet 55
-	fprint measureTemperature
-	fprint measureMFC
+	let[temp measureTemperature]
+	let[MFC measureMFC]	
+	fprint :temp
+	fprint :MFC
 	add-checksum		
 	wait 10 
 	blueoff
@@ -184,33 +186,33 @@ to coolToTemperature :target
 end
 
 to measureTemperature
-	let [totalValue 0]	
+	let [totalTemp 0]	
 	repeat TemperatureSamples 
 	[
-   	let[totalValue :totalValue + readTemperature]
-		wait TemperaturePeriod
+   	let[totalTemp :totalTemp + readTemperature]
+		wait TemperaturePeriod * 10
 	]
-	let [averageValue ( :totalValue / TemperatureSamples )]
-	output :averageValue
+	let [averageTemp ( :totalTemp / TemperatureSamples )]
+	output :averageTemp
 end
 
 to readTemperature
-	output readADC 6
+	output readADC 7
 end
 
 to measureMFC
-	let [totalValue 0]	
+	let [totalMFC 0]	
 	repeat MFCSamples 
 	[
-   	let[totalValue :totalValue + readMFC]
-		wait MFCPeriod
+   	let[totalMFC :totalMFC + readMFC]
+		wait MFCPeriod * 10
 	]
-	let [averageValue ( :totalValue / MFCSamples )]
-	output :averageValue
+	let [averageMFC ( :totalMFC / MFCSamples )]
+	output :averageMFC
 end
 
 to readMFC
-	output readADC 7
+	output (readADC 5 - readADC 6)
 end
 
 to heaterOn
@@ -230,7 +232,6 @@ to yellowOff
 	redoff
 	greenoff 
 end
-
 
 
 

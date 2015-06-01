@@ -45,12 +45,16 @@ end
 
 
 to process-header 
-  	make "type nth 1 :packet-bytes 	
-   if (:type = 55) [ checksum55 :packet-bytes ] 
-	;if (:type = 20) [ checksum20 :packet-bytes ] 
+   if( ( Count :packet-bytes ) > 0 )
+	[
+	  	make "type nth 1 :packet-bytes 	
+		if (:type = 55) [ checksum55 :packet-bytes ] 
+		;if (:type = 20) [ checksum20 :packet-bytes ] 
+	]
 end
 
 to checksum55 :packet-bytes
+	;write-packet :packet-bytes
 	let [nws ((first :packet-bytes) / 2) + 1] 
   	make "check55 wnth :nws :packet-bytes 
  	if not (:check55 = :oldcheck55)
@@ -72,10 +76,14 @@ end
 
 to process-data-packet
   	make "Temp wnth 4 :packet-bytes 
-  	make "Temp calibrate :Temp :temp_cal
-  	make "Volt wnth 5 :packet-bytes 
-  	make "Volt calibrate :Volt :volt_cal	  		 
-  	print (se "DATA :Temp :Volt)  
+   if( :Temp > 0) ;for some reason weird packets coming through
+	[	  		
+		make "Temp calibrate :Temp :temp_cal
+  	   make "Volt wnth 5 :packet-bytes 
+    	make "Volt calibrate :Volt :volt_cal 
+		make "Power voltageToPower :Volt 3000
+  		print (se :Temp :Volt :Power)  
+	]
 end
 
 to process-status-packet
@@ -94,6 +102,10 @@ to calibrate :n :m
   output  ((:n - :adc0) * :slope) + :val0
 end
 
+to voltageToPower :voltage :resistance
+	output (:voltage * :voltage) / :resistance
+end
+
 to valueToADC :n :m
   let [val0 nth 0 :m]
   let [val1 nth 2 :m]
@@ -103,8 +115,19 @@ to valueToADC :n :m
   output  ((:n - :adc0) * :slope) + :val0
 end
 
+to write-packet :packet-bytes
+	make "i 0
+	make "packet "||
+	repeat 10 
+	[
+		make "packet (se :packet wnth :i :packet-bytes)
+		make "i (:i + 1)
+	]
+	print :packet
+end
 
 to collect-packet
 output rl $1fc0 30
 end
+
 
