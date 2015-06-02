@@ -45,7 +45,7 @@
 		collect-data
 		wait 10 
 		blueoff
-		wait 6000		
+		wait 150		
 	 ]
  
  end
@@ -53,7 +53,24 @@
 
 to collect-data
    init-packet 55  
-     
+ 	let[MFC0 measureMFC0]
+   let[MFC1 measureMFC1]
+   let[MFC2 measureMFC2]
+	let[MFC3 measureMFC3]
+	let[MFC4 measureMFC4]
+	let[MFC5 measureMFC5]  
+   let[MFC6 measureMFC6]
+	let[MFC7 measureMFC7]	
+
+   fprint :MFC0
+	fprint :MFC1
+	fprint :MFC2
+   fprint :MFC3
+   fprint :MFC4
+	fprint :MFC5
+   fprint :MFC6
+	fprint :MFC7
+
    add-checksum
 end
 

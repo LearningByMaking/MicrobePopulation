@@ -3,17 +3,19 @@
 
 to microPop
  	print "|starting microPop| 
- 	init-microPop
+	make "fileName exec "|sh genFileName.sh|	
+	init-microPop
  	loop 
  	[
  		see-packet 
- 		wait 150 
+ 		wait 100
  	]
  end
  
 to init-microPop
   init-calibration
   init-hardware 
+  make "resistance 3000
   make "check 0 
   make "oldcheck 0 
   make "start-time int ( now / 1000 )  
@@ -36,56 +38,81 @@ end
 
 to see-packet
   make "packet-bytes collect-packet  
-  if (count :packet-bytes) > 0 
-  [    
-    process-header     
-  ]
-    
+  process-header      
 end
 
 
 to process-header 
-  let [nws ((first :packet-bytes) / 2) + 1] 
-  make "check wnth :nws :packet-bytes    
-  if not (:check = :oldcheck) 
-  [     
-    make "type nth 1 :packet-bytes 
-    if (:type = 55) [ process-data-packet ] 
-  ]
-  make "oldcheck :check 
+   let [length (first :packet-bytes) / 2 ]  
+	let [nws :length + 1] 
+	make "check wnth :nws :packet-bytes  
+	if not (:check = :oldcheck) 
+	[		   
+		make "type nth 1 :packet-bytes 
+ 		if (:type = 55) 
+		[ 
+			if(:length > 10)
+			[
+				process-data-packet 
+			]
+		] 		
+	]
+	make "oldcheck :check 
+
 end
 
 to process-data-packet
+	
  
-  make "Volt1 wnth 5 :packet-bytes 
-  make "Volt1 calibrate :Volt1 :volt_cal  
-  make "Volt2 wnth 6 :packet-bytes 
-  make "Volt2 calibrate :Volt2 :volt_cal  
-  make "Volt3 wnth 7 :packet-bytes 
-  make "Volt3 calibrate :Volt3 :volt_cal
-  make "Volt4 wnth 8 :packet-bytes 
-  make "Volt4 calibrate :Volt4 :volt_cal 
-  make "Volt5 wnth 9 :packet-bytes 
-  make "Volt5 calibrate :Volt5 :volt_cal 
-  make "Volt6 wnth 10 :packet-bytes 
-  make "Volt6 calibrate :Volt6 :volt_cal 
-  make "Volt7 wnth 11 :packet-bytes 
-  make "Volt7 calibrate :Volt7 :volt_cal 
-  make "Volt8 wnth 12 :packet-bytes 
-  make "Volt8 calibrate :Volt8 :volt_cal 
-
-  make "time elapsedTime 
+   make "Volt0 wnth 4 :packet-bytes 
+   make "Volt0 calibrate :Volt0 :volt_cal 
+	make "Power0 voltageToPower :Volt0 :resistance
+	
+	make "Volt1 wnth 5 :packet-bytes 
+   make "Volt1 calibrate :Volt1 :volt_cal
+	make "Power1 voltageToPower :Volt1 :resistance	  
   
-  print (se "Time :time)
-  print (se "Exp1 :Volt1 "V )
-  print (se "Exp2 :Volt2 "V )
-  print (se "Exp3 :Volt3 "V )
-  print (se "Exp4 :Volt4 "V ) 
-  print (se "Exp5 :Volt5 "V )
-  print (se "Exp6 :Volt6 "V )
-  print (se "Exp7 :Volt7 "V )
-  print (se "Exp8 :Volt8 "V ) 
-  cUp 8
+	make "Volt2 wnth 6 :packet-bytes 
+  	make "Volt2 calibrate :Volt2 :volt_cal  
+	make "Power2 voltageToPower :Volt2 :resistance	  
+  
+	make "Volt3 wnth 7 :packet-bytes 
+  	make "Volt3 calibrate :Volt3 :volt_cal
+	make "Power3 voltageToPower :Volt3 :resistance
+  
+	make "Volt4 wnth 8 :packet-bytes 
+	make "Volt4 calibrate :Volt4 :volt_cal
+	make "Power4 voltageToPower :Volt4 :resistance 
+  
+	make "Volt5 wnth 9 :packet-bytes 
+   make "Volt5 calibrate :Volt5 :volt_cal 
+	make "Power5 voltageToPower :Volt5 :resistance
+ 
+   make "Volt6 wnth 10 :packet-bytes 
+   make "Volt6 calibrate :Volt6 :volt_cal 
+	make "Power6 voltageToPower :Volt6 :resistance
+ 
+ 	make "Volt7 wnth 11 :packet-bytes 
+   make "Volt7 calibrate :Volt7 :volt_cal 
+	make "Power7 voltageToPower :Volt7 :resistance
+
+   make "time elapsedTime 	
+   
+   print ("|___________________|)
+   print (se "Time :time)
+   print (se "Exp0 round :Power0 )
+ 	print (se "Exp1 round :Power1 )
+   print (se "Exp2 round :Power2 )
+   print (se "Exp3 round :Power3 )
+   print (se "Exp4 round :Power4 ) 
+   print (se "Exp5 round :Power5 )
+   print (se "Exp6 round :Power6 )
+   print (se "Exp7 round :Power7 )
+
+  	prfopen :fileName 	
+  	prfprint (se :time :Power0 :Power1 :Power2 :Power3 :Power4 :Power5 :Power6 :Power7)
+  	prfclose
+   
 
 end
 
@@ -107,12 +134,15 @@ to valueToADC :n :m
   output  ((:n - :adc0) * :slope) + :val0
 end
 
+to voltageToPower :voltage :resistance
+	output :voltage * :voltage / :resistance * 1000000
+end
+
 to plot-adc
    x-data "|Elapsed Time (seconds)| :time-list ;
    y-data "|ADC reading| :adc-list 
    plot 2 
-   display "|-geometry 600x400+1000+100| 
-  
+   display "|-geometry 600x400+1000+100|  
 end
 
 to elapsedTime
@@ -128,6 +158,10 @@ to addADCToList :adc
 end
 
 to collect-packet
-output rl $1fc0 30
+   output rl $1fc0 30
 end
 
+to print-packet
+  make "wp packet-words :packet-bytes
+  print ( se word "T bf 100 + :type round now / 1000 :wp  ) 
+end

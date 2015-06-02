@@ -217,7 +217,7 @@ to packet-words :l
 end
 
 to wnth :i :l
-  output (nth 2 * :i :l) + 256 * (nth 2 * :i + 1 :l)
+ output (nth 2 * :i :l) + 256 * (nth 2 * :i + 1 :l)
 end
 
 

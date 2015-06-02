@@ -44426,3 +44426,3512 @@ project "microPop
 .compile
   Compiling...
   1851 bytes
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Mon Jun  1 14:15:49 PDT 2015   unix time:  1433193349528
+  Opening Project  microPop
+.compile
+  Compiling...
+  1851 bytes
+.download
+  1851 bytes
+.microPop
+  starting microPop
+  time 21
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  [8A
+  time 607
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  [8A
+  time 1212
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  [8A
+  time 1817
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  [8A
+  time 2422
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  [8A
+  time 3026
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  [8A
+  time 3612
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  [8A
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Mon Jun  1 15:23:55 PDT 2015   unix time:  1433197435433
+  Opening Project  microPop
+.microPop
+  starting microPop
+..
+  stopped.
+.compile
+..
+  stopped.
+.stopvm
+.compile
+  Compiling...
+  1851 bytes
+  Compiling...
+  1851 bytes
+.downlaoad
+  stopvm error
+  I don't know how to downlaoad
+.download
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Mon Jun  1 15:25:10 PDT 2015   unix time:  1433197510696
+  Opening Project  microPop
+print 1234
+  Chip not found.
+print 1234
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Mon Jun  1 15:26:11 PDT 2015   unix time:  1433197571606
+  Opening Project  microPop
+print 1234
+  Chip not found.
+print 1234
+  Chip not found.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Mon Jun  1 15:27:32 PDT 2015   unix time:  1433197652223
+  Opening Project  microPop
+print 1234
+  Chip not found.
+print 1234
+  1234
+.compile
+  Compiling...
+  1851 bytes
+.download
+  1851 bytes
+print readADC 7
+  0
+print readADC 6
+  0
+print readADC 5
+  0
+print readADC 4
+  0
+print readADC 3
+  0
+print readADC 2
+  1
+print readADC 1
+  0
+print readADC 0
+  0
+print readADC 0
+  839
+print readADC 0
+  812
+print readADC 0
+  813
+print readADC 1
+  823
+print readADC 2
+  819
+print readADC 3
+  819
+print readADC 4
+  816
+print readADC 5
+  813
+print readADC 6
+  823
+print readADC 7
+  819
+.microPop
+  starting microPop
+  nth doesn't like 130 as input in wnth
+.microPop
+  starting microPop
+  time 3
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  java.lang.NullPointerException
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Mon Jun  1 15:34:38 PDT 2015   unix time:  1433198078657
+  Opening Project  microPop
+.compile
+  Compiling...
+  MFC1 undefined in collect-data
+.compile
+  Compiling...
+  1921 bytes
+.download
+  1921 bytes
+.microPop
+  starting microPop
+  time 3
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  java.lang.NullPointerException
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  time 3
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  Missing ")" in process-data-packet
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  time 3
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  ___________________
+..
+  stopped.
+.compile
+  Compiling...
+  1920 bytes
+.download
+  1920 bytes
+.microPop
+  starting microPop
+  time 3
+  Exp1 52.81208791208791 V
+  Exp2 52.81208791208791 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 52.81208791208791 V
+  Exp6 52.81208791208791 V
+  Exp7 0 V
+  Exp8 0 V
+  ___________________
+  time 21
+  Exp1 0 V
+  Exp2 0 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 0 V
+  Exp6 0 V
+  Exp7 35.41516483516484 V
+  Exp8 0 V
+  ___________________
+  time 39
+  Exp1 0 V
+  Exp2 0 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 0 V
+  Exp6 0 V
+  Exp7 40.9570695970696 V
+  Exp8 0 V
+  ___________________
+  time 58
+  Exp1 0 V
+  Exp2 0 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 0 V
+  Exp6 0 V
+  Exp7 35.925274725274726 V
+  Exp8 0 V
+  ___________________
+  time 76
+  Exp1 0 V
+  Exp2 0 V
+  Exp3 0 V
+  Exp4 0 V
+  Exp5 0 V
+  Exp6 0 V
+  Exp7 33.40937728937729 V
+  Exp8 0 V
+  ___________________
+..
+  stopped.
+.stopvm
+.compile
+  Compiling...
+  1915 bytes
+.download
+  1915 bytes
+collect-data
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  done
+collect-data
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  done
+.compile
+  Compiling...
+  1920 bytes
+.download
+  1920 bytes
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  time 3
+  Exp1 52.81208791208791
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  Exp8 0
+  ___________________
+  time 22
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.57787545787546
+  Exp8 0
+  ___________________
+  time 40
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.11978021978022
+  Exp8 0
+  ___________________
+  time 58
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.087985347985345
+  Exp8 0
+  ___________________
+  time 76
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.62989010989011
+  Exp8 0
+  ___________________
+  time 95
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.113992673992676
+  Exp8 0
+  ___________________
+  time 113
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 41.14
+  Exp8 0
+  ___________________
+  time 131
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.624102564102564
+  Exp8 0
+  ___________________
+  time 150
+  Exp1 52.81208791208791
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  Exp8 0
+  ___________________
+  time 168
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.13421245421245
+  Exp8 0
+  ___________________
+  time 186
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.618315018315016
+  Exp8 0
+  ___________________
+.rr
+.microPop
+  time 205
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.64432234432235
+  Exp8 0
+  ___________________
+..
+  stopped.
+  starting microPop
+.microPop
+  time 3
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.12842490842491
+  Exp8 0
+  ___________________
+..
+  stopped.
+  Opening Project  microPop
+  project reloaded
+  starting microPop
+.microPop
+  nth doesn't like 22 as input in wnth
+  starting microPop
+  nth doesn't like 22 as input in wnth
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+.microPop
+  starting microPop
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Mon Jun  1 15:48:24 PDT 2015   unix time:  1433198904343
+  Opening Project  microPop
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  2 10:27:46 PDT 2015   unix time:  1433266066086
+  Opening Project  microPop
+.microPop
+  starting microPop
+  stopvm error
+..
+  stopped.
+print 1234
+print 1234
+  Chip not found.
+  1234
+print 1234
+  1234
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+..
+  stopped.
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  11
+  11
+  11
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  0
+  0
+  512
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  check
+  check
+.rr
+..
+  stopped.
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  nth doesn't like 15 as input in wnth
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  time 21
+  Exp0 0
+  time 39
+  Exp0 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  11
+  4
+  time 3
+  Exp0 8.058608058608059E-4
+  11
+  11
+  11
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  nth doesn't like 22 as input in wnth
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  time 3
+  Exp0 0
+  time 21
+  Exp0 0
+.rr
+..
+  stopped.
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  time 4
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.222637362637364
+  ___________________
+  time 22
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.800659340659344
+  ___________________
+  time 40
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.28476190476191
+  ___________________
+  time 58
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 77
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.794871794871796
+  ___________________
+  time 95
+  Exp0 0
+  Exp2 0
+  Exp3 8.058608058608059E-4
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.2781684981685
+  ___________________
+  time 113
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.30498168498168
+  ___________________
+  time 132
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.78908424908425
+  ___________________
+  time 150
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 168
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.29919413919414
+  ___________________
+  time 187
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 33.78007326007326
+  ___________________
+  time 205
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0.0016117216117216117
+  Exp7 36.80769230769231
+  ___________________
+  time 223
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.293406593406594
+  ___________________
+  time 242
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.31941391941392
+  ___________________
+  time 260
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.80351648351648
+  ___________________
+  time 279
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 8.058608058608059E-4
+  Exp6 0
+  Exp7 40.34461538461539
+  ___________________
+  time 297
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.312820512820515
+  ___________________
+  time 315
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.85553113553114
+  ___________________
+  time 334
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.823736263736265
+  ___________________
+  time 352
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 33.30783882783883
+  ___________________
+  time 370
+  Exp0 8.058608058608059E-4
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.84893772893773
+  ___________________
+  time 389
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 8.058608058608059E-4
+  Exp7 33.817142857142855
+  ___________________
+  time 407
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.35985347985348
+  ___________________
+  time 425
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.328058608058605
+  ___________________
+  time 444
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.86996336996337
+  ___________________
+  time 462
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.354065934065936
+  ___________________
+  time 480
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.38007326007326
+  ___________________
+  time 499
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.864175824175824
+  ___________________
+  time 517
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.89018315018315
+  ___________________
+  time 535
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.37428571428571
+  ___________________
+  time 554
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.858388278388276
+  ___________________
+  time 572
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.88439560439561
+  ___________________
+  time 590
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.36849816849817
+  ___________________
+  time 609
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.394505494505495
+  ___________________
+  time 627
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.87860805860806
+  ___________________
+  time 645
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.36271062271062
+  ___________________
+  time 664
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.38871794871795
+  ___________________
+  time 682
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.87282051282051
+  ___________________
+  time 700
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.89882783882784
+  ___________________
+  time 719
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.382930402930405
+  ___________________
+  time 737
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.924835164835166
+  ___________________
+  time 755
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.89304029304029
+  ___________________
+  time 774
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 33.37714285714286
+  ___________________
+  time 792
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.40315018315018
+  ___________________
+  time 811
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 33.887252747252745
+  ___________________
+  time 829
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 847
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.39736263736264
+  ___________________
+  time 866
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.9392673992674
+  ___________________
+  time 884
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.90747252747253
+  ___________________
+  time 902
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.44937728937729
+  ___________________
+  time 920
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 8.058608058608059E-4
+  Exp5 0
+  Exp6 0
+  Exp7 37.93267399267399
+  ___________________
+  time 939
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.959487179487176
+  ___________________
+  time 957
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.44358974358974
+  ___________________
+  time 976
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 33.411794871794875
+  ___________________
+  time 994
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.953699633699635
+  ___________________
+  time 1012
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 1031
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.46380952380952
+  ___________________
+  time 1049
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.94791208791209
+  ___________________
+  time 1067
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.97391941391941
+  ___________________
+  time 1086
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.458021978021975
+  ___________________
+  time 1104
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 1122
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.96813186813187
+  ___________________
+  time 1141
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.452234432234434
+  ___________________
+  time 1159
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.47824175824176
+  ___________________
+  time 1177
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.96234432234432
+  ___________________
+  time 1196
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 1214
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.47245421245421
+  ___________________
+  time 1232
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 33.95655677655677
+  ___________________
+  time 1251
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.982564102564105
+  ___________________
+  time 1269
+  Exp0 0
+  Exp2 0.0016117216117216117
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.465054945054945
+  ___________________
+  time 1288
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 1306
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 34.97677655677656
+  ___________________
+  time 1324
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.51868131868132
+  ___________________
+  time 1343
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 35.486886446886444
+  ___________________
+  time 1361
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 41.02879120879121
+  ___________________
+  time 1379
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 1397
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 33.4810989010989
+  ___________________
+  time 1416
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.023003663003664
+  ___________________
+  time 1434
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 33.99120879120879
+  ___________________
+  time 1453
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.53311355311355
+  ___________________
+  time 1471
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 1489
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 40.04322344322345
+  ___________________
+  time 1508
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 37.52732600732601
+  ___________________
+  time 1526
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 8.058608058608059E-4
+  Exp6 0
+  Exp7 40.55252747252747
+  ___________________
+  time 1544
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.0374358974359
+  ___________________
+  time 1563
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 1581
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 38.547545787545786
+  ___________________
+  time 1599
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.02842490842491
+  ___________________
+  time 1618
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 39.057655677655674
+  ___________________
+  time 1636
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 36.541758241758245
+  ___________________
+  time 1654
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 1673
+  Exp0 0
+  Exp2 8.058608058608059E-4
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0.0016117216117216117
+  Exp7 37.04945054945055
+  ___________________
+..
+  stopped.
+.compile
+  Compiling...
+  MFC0 has no value in collect-data
+.compile
+  Compiling...
+  1930 bytes
+.download
+  1930 bytes
+.microPop
+  starting microPop
+  time 3
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 8.058608058608059E-4
+  Exp5 0
+  Exp6 0
+  Exp7 35.04527472527472
+  ___________________
+  time 22
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 40
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 58
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 77
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 95
+  Exp0 0.0016117216117216117
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 113
+  Exp0 0
+  Exp2 52.81208791208791
+  Exp3 0
+  Exp4 0
+  Exp5 52.81208791208791
+  Exp6 52.81208791208791
+  Exp7 0
+  ___________________
+  time 132
+  Exp0 0.7276923076923076
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 150
+  Exp0 0.7035164835164835
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+.rr
+..
+  stopped.
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 862
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 21
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 40
+  Exp0 0
+  Exp2 0
+  Exp3 0
+  Exp4 1
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 58
+  Exp0 0
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 21
+  Exp0 0
+  Exp1 837
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 39
+  Exp0 0
+  Exp1 838
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 58
+  Exp0 0
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+  ___________________
+  time 76
+  Exp0 0
+  Exp1 0
+  Exp2 847
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 94
+  Exp0 0
+  Exp1 0
+  Exp2 847
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 113
+  Exp0 0
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+  ___________________
+  time 131
+  Exp0 0
+  Exp1 0
+  Exp2 854
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 149
+  Exp0 0
+  Exp1 0
+  Exp2 856
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 167
+  Exp0 0
+  Exp1 0
+  Exp2 851
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 186
+  Exp0 0
+  Exp1 0
+  Exp2 860
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 204
+  Exp0 0
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  14102
+  i+1 has no value in print-packet
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  14102
+  65535
+  331
+  6052
+  0
+  0
+  865
+  0
+  0
+  0
+  0
+  0
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 865
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  packet has no value in print-packet
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  packet 14102 65535 341 5162 0 0 865 0 0 0 0 0
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 865
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 343 9775 0 0 866 0 0 0 0 0
+  ___________________
+  time 22
+  Exp0 0
+  Exp1 0
+  Exp2 866
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 345 3199 0 0 865 1 0 0 0 0
+  ___________________
+  time 40
+  Exp0 0
+  Exp1 0
+  Exp2 865
+  Exp3 1
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14086 65535 348 47 0 65535 65535 0 0 65535 65535 0
+  ___________________
+  time 58
+  Exp0 0
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+  packet 14102 65535 349 3471 0 0 866 0 0 0 0 0
+  ___________________
+  time 77
+  Exp0 0
+  Exp1 0
+  Exp2 866
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 350 6895 0 0 866 0 0 0 0 0
+  ___________________
+  time 95
+  Exp0 0
+  Exp1 0
+  Exp2 866
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14086 65535 353 3743 0 65535 65535 0 0 65535 65535 0
+  ___________________
+  time 113
+  Exp0 0
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+  packet 14102 65535 354 7167 0 0 867 0 0 0 0 0
+  ___________________
+  time 132
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 356 591 0 0 867 0 0 0 0 0
+  ___________________
+  time 150
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+.rr
+.microPop
+  packet 14102 65535 358 7439 0 0 867 0 0 0 0 0
+  ___________________
+  time 168
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+  starting microPop
+.rr
+
+  packet 14102 65535 358 7439 0 0 867 0 0 0 0 0
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+  Opening Project  microPop
+  project reloaded
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  packet 14102 65535 360 1744 0 0 865 0 0 0 0 0
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 865
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 362 9696 0 0 867 0 0 0 0 0
+  ___________________
+  time 21
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 364 3120 0 0 871 0 0 0 0 0
+  ___________________
+  time 40
+  Exp0 0
+  Exp1 0
+  Exp2 871
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14086 65535 366 9968 0 65535 65535 0 0 65535 65535 0
+  ___________________
+  time 58
+  Exp0 0
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+  packet 14102 65535 368 3392 0 0 867 0 0 0 0 0
+  ___________________
+  time 76
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 369 6816 0 0 867 0 0 0 0 0
+  ___________________
+  time 95
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 372 3664 0 0 867 2 0 0 0 0
+  ___________________
+  time 113
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 2
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 373 7088 0 0 867 0 0 0 0 0
+  ___________________
+  time 131
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 375 512 0 0 871 0 0 0 0 0
+  ___________________
+  time 150
+  Exp0 0
+  Exp1 0
+  Exp2 871
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  packet 14102 65535 376 3936 0 0 867 0 0 0 0 0 46256 65535 65535
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 378 9585 0 0 866 0 0 0 0 0 40606 65535 65535
+  ___________________
+  time 22
+  Exp0 0
+  Exp1 0
+  Exp2 866
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 380 3009 2 0 867 0 0 0 0 0 47177 65535 65535
+  ___________________
+  time 40
+  Exp0 2
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14086 65535 382 9857 0 65535 65535 0 0 65535 65535 0 0 65535 65535
+  ___________________
+  time 58
+  Exp0 0
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+.compile
+  Compiling...
+  1936 bytes
+.download
+  1936 bytes
+.microPop
+  starting microPop
+  packet 14102 65535 385 6705 0 0 867 0 0 0 0 0 43478 65535 65535
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14086 65535 389 6899 0 65535 65535 0 0 65535 65535 0 0 65535 65535
+  ___________________
+  time 26
+  Exp0 0
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+  packet 14102 65535 391 7323 0 1 865 0 0 0 0 0 42855 65535 65535
+  ___________________
+  time 50
+  Exp0 0
+  Exp1 1
+  Exp2 865
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  packet 14102 65535 393 7747 0 0 867 0 0 0 0 0 42428 65535 65535
+  ___________________
+  time 73
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.download
+  1936 bytes
+.compile
+  Compiling...
+  1890 bytes
+.download
+  1890 bytes
+.microPop
+  starting microPop
+  packet 14102 65535 395 8171 0 0 866 0 0 0 0 0 42003 65535 65535
+  ___________________
+  time 4
+  Exp0 0
+  Exp1 0
+  Exp2 866
+  Exp3 0
+  packet 14094 65535 401 338 0 0 871 0 49833 65535 65535 0 0 65535 65535
+  ___________________
+  time 27
+  Exp0 0
+  Exp1 0
+  Exp2 871
+  Exp3 0
+  packet 14094 65535 402 7550 0 0 866 0 42625 65535 65535 0 0 65535 65535
+  ___________________
+  time 50
+  Exp0 0
+  Exp1 0
+  Exp2 866
+  Exp3 0
+  packet 14086 65535 406 1974 0 65535 65535 0 0 65535 65535 0 0 65535 65535
+  ___________________
+  time 74
+  Exp0 0
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  packet 14094 65535 407 9186 0 0 867 0 40983 65535 65535 0 0 65535 65535
+  ___________________
+  time 97
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  packet 14094 65535 409 6398 0 0 867 0 43769 65535 65535 0 0 65535 65535
+  ___________________
+  time 121
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  packet 14094 65535 413 822 0 0 867 0 49341 65535 65535 0 0 65535 65535
+  ___________________
+  time 144
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.compile
+  Compiling...
+  llet undefined in collect-data
+.compile
+  Compiling...
+  1898 bytes
+.download
+  1898 bytes
+.microPop
+  starting microPop
+  packet 14094 65535 418 2458 0 0 867 0 47700 65535 65535 0 0 65535 65535
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  packet 14094 65535 418 2458 0 0 867 0 47700 65535 65535 0 0 65535 65535
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 867
+  Exp3 0
+  Exp4 47700
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+..
+  stopped.
+.compile
+  Compiling...
+  1882 bytes
+.download
+  1882 bytes
+.ul-init
+.ul-go
+  0
+  0
+  867
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  864
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  867
+  0
+  0
+  1
+  0
+  0
+  0
+  0
+  867
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  865
+  0
+  1
+  0
+  0
+  0
+  0
+  0
+  864
+  0
+  0
+  0
+  0
+  3
+  0
+  0
+  867
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  867
+  0
+  0
+  0
+  0
+  1
+.stopvm
+.compile
+  Compiling...
+  1914 bytes
+.download
+.ul-power
+  1914 bytes
+.ul-init
+.ul-go
+.compile
+  Compiling...
+  1914 bytes
+.download
+  1914 bytes
+ul-power
+ul-init
+ul-go
+  0
+  0
+  865
+  0
+  0
+  0
+  0
+  2
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+..
+  stopped.
+.microPop
+  starting microPop
+..
+  stopped.
+.compile
+  Compiling...
+  1930 bytes
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+.dow.download
+  I don't know how to dow.download
+.download
+  1930 bytes
+.microPop
+  starting microPop
+  packet 14086 65535 7 7974 43470 65535 65535 0 0 65535 65535 0 0 65535 65535
+  ___________________
+  time 3
+  Exp0 43470
+  Exp1 65535
+  Exp2 65535
+  Exp3 0
+  Exp4 0
+  Exp5 65535
+  Exp6 65535
+  Exp7 0
+.rr
+..
+  stopped.
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  packet 14082 65535 65535 0 0 65535 65535 0 0 65535 65535 0 0 65535 65535
+..
+  stopped.
+.microPop
+  starting microPop
+  packet 14082 65535 65535 0 0 65535 65535 0 0 65535 65535 0 0 65535 65535
+..
+  stopped.
+.compile
+  Compiling...
+  1930 bytes
+.download
+  1930 bytes
+.microPop
+  starting microPop
+  packet 14082 65535 65535 0 0 65535 65535 0 0 65535 65535 0 0 65535 65535
+  packet 14102 65535 4 4320 0 0 0 0 0 0 0 0 47111 65535 65535
+  packet 14102 65535 6 2744 0 0 0 0 0 0 0 0 48685 65535 65535
+  packet 14102 65535 8 1168 0 0 0 0 0 0 0 0 50259 65535 65535
+  packet 14086 65535 11 8016 0 65535 65535 0 0 65535 65535 0 0 65535 65535
+  packet 14102 65535 13 6440 0 0 1 0 0 0 0 0 44981 65535 65535
+  packet 14102 65535 15 4864 0 0 0 0 0 0 0 0 46556 65535 65535
+  packet 14102 65535 17 3288 0 0 0 0 0 0 0 0 48130 65535 65535
+  packet 14102 65535 21 136 0 0 0 0 0 0 0 0 51278 65535 65535
+  packet 14102 65535 22 8560 0 0 0 0 1 0 0 0 42852 65535 65535
+  packet 14102 65535 24 6984 0 0 0 0 0 0 0 0 44427 65535 65535
+  packet 14102 65535 26 5408 0 0 0 0 0 0 0 0 46001 65535 65535
+  packet 14102 65535 30 2256 0 0 0 0 1 0 0 0 49148 65535 65535
+  packet 14102 65535 32 680 0 0 0 0 0 0 0 0 50723 65535 65535
+  packet 14102 65535 33 9104 0 0 0 0 0 0 0 0 42298 65535 65535
+  packet 14086 65535 37 5952 0 65535 65535 0 0 65535 65535 0 0 65535 65535
+  packet 14102 65535 39 4376 0 0 0 0 0 0 0 0 47020 65535 65535
+  packet 14102 65535 41 2800 0 1 0 0 0 0 0 0 48593 65535 65535
+  packet 14102 65535 43 1224 0 0 0 0 0 0 0 0 50168 65535 65535
+  packet 14102 65535 46 8072 0 0 0 0 0 3 0 0 43314 65535 65535
+  packet 14102 65535 48 6496 2 0 0 0 0 0 0 0 44889 65535 65535
+  packet 14102 65535 50 4920 0 0 0 0 0 0 0 0 46465 65535 65535
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  packet 14102 65535 52 3344 0 2 0 0 0 0 0 0 48037 65535 65535
+  packet 14102 65535 55 6190 1 0 0 0 0 0 0 0 45189 65535 65535
+  packet 14102 65535 57 4614 0 0 0 0 0 0 0 0 46764 65535 65535
+  packet 14102 65535 59 3038 4 0 0 0 0 0 0 0 48334 65535 65535
+  packet 14102 65535 64 8310 0 0 0 0 0 0 2 0 43059 65535 65535
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  2 11:58:27 PDT 2015   unix time:  1433271507545
+  Opening Project  microPop
+.microPop
+  starting microPop
+  T55 1433271541 14102 65535 00087 06003 00000 00000 00000 00000 00000 00000 00000 00000
+  You don't say what to do with 22 55 255 255 87 0 115 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33 177 255 255 255 255 in process-data-packet
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1433271638 14102 65535 00096 08123 00000 00000 00000 00000 00000 00000 00000 00000
+  You don't say what to do with 22 55 255 255 96 0 187 31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 208 168 255 255 255 255 in process-data-packet
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1433271692 14102 65535 00101 05244 00000 00000 00000 00000 00000 00000 00000 00000
+  I don't know how to .. in process-header
+.microPop
+  starting microPop
+  T55 1433271719 14102 65535 00105 00273 00000 00000 00000 00000 00000 00000 00000 00000
+  I don't know how to .. in process-header
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1433271737 14102 65535 00105 08822 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433271760 14102 65535 00109 05359 00000 00000 00001 00000 00000 00000 00000 00000
+  T55 1433271784 14102 65535 00111 03783 00000 00000 00000 00001 00000 00000 00002 00000
+  T55 1433271807 14102 65535 00113 02207 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433271830 14086 65535 00116 09055
+  T55 1433271854 14102 65535 00118 07479 00001 00000 00000 00000 00000 00000 00000 00000
+  T55 1433271877 14102 65535 00120 05903 00000 00000 00000 00000 00000 00000 00000 00001
+  T55 1433271901 14102 65535 00122 04327 00000 00000 00000 00000 00000 00000 00000 00000
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  2 12:06:16 PDT 2015   unix time:  1433271976327
+  Opening Project  microPop
+.print $3716
+  14102
+.print $37
+  55
+.print $16
+  22
+.print $3708
+  14088
+.print $3706
+  14086
+.compile
+  Compiling...
+  1890 bytes
+.download
+  1890 bytes
+.microPop
+  starting microPop
+  T55 1433272215 14102 65535 00153 07535 00002 00001 00000 00000 00000 00000 00000 00000
+  T55 1433272238 14102 65535 00157 02127 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272262 14102 65535 00158 08128 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272285 14102 65535 00162 00130 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272309 14102 65535 00163 06131 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272332 14102 65535 00166 08133 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272355 14102 65535 00168 04134 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272379 14102 65535 00171 06136 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272402 14102 65535 00173 02137 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272426 14102 65535 00176 04139 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272449 14102 65535 00178 00140 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272472 14102 65535 00181 02142 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272496 14102 65535 00182 08143 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272519 14102 65535 00186 00145 00000 00000 00000 00000 00000 00000 00000 00000
+..
+  stopped.
+.compile
+  Compiling...
+  1930 bytes
+.download
+  1930 bytes
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1433272547 14102 65535 00186 00145 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272570 14102 65535 00190 07043 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272594 14102 65535 00192 05467 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272617 14102 65535 00194 03891 00000 00000 00001 00001 00000 00000 00000 00000
+  T55 1433272641 14086 65535 00198 00739
+  T55 1433272664 14102 65535 00199 09163 00001 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272687 14102 65535 00201 07587 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272711 14102 65535 00203 06011 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272734 14102 65535 00207 02859 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272758 14102 65535 00209 01283 00003 00000 00000 00000 00000 00002 00000 00000
+  T55 1433272781 14102 65535 00210 09707 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272804 14102 65535 00212 08131 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272828 14102 65535 00216 04979 00000 00001 00000 00000 00000 00000 00000 00000
+  T55 1433272851 14102 65535 00218 03403 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433272875 14102 65535 00220 01827 00000 00000 00000 00000 00000 00000 00000 00002
+  T55 1433272898 14086 65535 00223 08675
+  T55 1433272921 14102 65535 00225 07099 00000 00000 00000 00000 00000 00000 00000 00000
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  + doesn't like 14102 65535 00227 05523 00000 00000 00000 00000 00000 00000 00000 00000 as input in print-packet
+.,
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  14102 65535 00233 01349 00000 00000 00000 00000 00000 00000 00001 00000
+  T55 1433273008 14102 65535 00233 01349 00000 00000 00000 00000 00000 00000 00001 00000
+  14102 65535 00235 00740 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433273021 14102 65535 00235 00740 00000 00000 00000 00000 00000 00000 00000 00000
+  14102 65535 00236 09164 00000 00000 00000 00000 00000 00000 00003 00000
+  T55 1433273035 14102 65535 00236 09164 00000 00000 00000 00000 00000 00000 00003 00000
+  14102 65535 00238 07588 00000 00000 00000 00000 00000 00001 00000 00000
+  T55 1433273048 14102 65535 00238 07588 00000 00000 00000 00000 00000 00001 00000 00000
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  14102 65535 00249 08132 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433273163 14102 65535 00249 08132 00000 00000 00000 00000 00000 00000 00000 00000
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1433273178 14102 65535 00250 05987 00000 00000 00000 00000 00000 00000 00000 00000
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  65535
+  T55 1433273221 14086 65535 00255 07772
+  65535
+  65535
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  50496
+  T55 1433273268 14102 65535 00260 00679 00000 00000 00000 00000 00000 00000 00000 00000
+  50159
+  T55 1433273281 14102 65535 00261 01015 00000 00000 00000 00000 00000 00000 00000 00000
+  41734
+  T55 1433273294 14102 65535 00262 09439 00000 00000 00000 00000 00000 00000 00000 00000
+  43307
+  T55 1433273308 14102 65535 00264 07863 00001 00000 00000 00000 00000 00000 00000 00000
+  43307
+  44881
+  T55 1433273334 14102 65535 00266 06287 00000 00001 00000 00000 00000 00000 00000 00000
+  46456
+  T55 1433273347 14102 65535 00268 04711 00000 00000 00000 00000 00000 00000 00000 00000
+  0
+  48030
+  T55 1433273374 14102 65535 00270 03135 00000 00000 00000 00000 00000 00000 00000 00000
+  49604
+  T55 1433273387 14102 65535 00272 01559 00000 00000 00000 00000 00000 00000 00000 00000
+  41179
+  T55 1433273400 14102 65535 00273 09983 00000 00000 00000 00000 00000 00000 00000 00000
+  41179
+  42753
+  T55 1433273427 14102 65535 00275 08407 00000 00000 00000 00000 00000 00000 00000 00000
+  44326
+  T55 1433273440 14102 65535 00277 06831 00000 00000 00001 00000 00000 00000 00000 00000
+  0
+  45898
+  T55 1433273467 14102 65535 00279 05255 00000 00000 00000 00000 00000 00000 00003 00000
+  47475
+  T55 1433273480 14102 65535 00281 03679 00000 00000 00000 00000 00000 00000 00000 00000
+  Welcome to Logo
+pproject "microPop
+  I don't know how to pproject
+..
+  stopped.
+project "microPop
+  Start Project:  microPop     Tue Jun  2 12:32:52 PDT 2015   unix time:  1433273572266
+  Opening Project  microPop
+.microPop
+  starting microPop
+  type has no value in print-packet
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  T55 1433273636 14102 65535 00295 09146 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433273650 14102 65535 00298 00040 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433273663 14102 65535 00299 08464 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433273676 14086 65535 00301 06888
+  T55 1433273689 14102 65535 00301 06888 00000 00000 00000 00002 00000 00000 00000 00000
+  T55 1433273702 14102 65535 00303 05312 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433273716 14102 65535 00305 03736 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433273729 14086 65535 00307 02160
+  T55 1433273742 14102 65535 00307 02160 00000 00000 00000 00000 00000 00000 00000 00000
+  T55 1433273755 14102 65535 00309 00584 00000 00000 00001 00000 00000 00000 00000 00000
+  T55 1433273769 14102 65535 00310 09008 00000 00000 00000 00000 00000 00000 00000 00000
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  30
+  30
+  30
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  11
+  T55 1433274070 14102 65535 00340 02482 00000 00000 00000 00000 00000 00000 00000 00000
+  11
+  T55 1433274083 14102 65535 00341 04566 00000 00000 00000 00000 00000 00000 00000 00000
+  11
+  T55 1433274096 14102 65535 00343 02990 00000 00000 00000 00000 00000 00000 00000 00000
+  11
+  T55 1433274110 14102 65535 00345 01414 00000 00000 00000 00000 00000 00000 00000 00000
+  11
+  11
+  T55 1433274136 14102 65535 00346 09838 00001 00000 00000 00000 00000 00000 00000 00000
+  11
+  T55 1433274149 14102 65535 00348 08262 00000 00000 00000 00000 00000 00000 00000 00000
+  3
+  T55 1433274163 14086 65535 00350 06686
+  11
+  T55 1433274176 14102 65535 00350 06686 00000 00000 00000 00000 00000 00000 00000 00000
+  11
+  T55 1433274189 14102 65535 00352 05110 00000 00000 00000 00000 00000 00000 00000 00000
+  11
+  T55 1433274202 14102 65535 00354 03534 00000 00001 00000 00000 00000 00000 00000 00000
+  11
+  11
+  T55 1433274229 14102 65535 00356 01958 00000 00000 00000 00000 00000 00000 00000 00000
+.rr
+..
+  stopped.
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 16
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 29
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 43
+  Exp0 0.0024175824175824176
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 69
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 82
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 8.058608058608059E-4
+  Exp7 0
+  ___________________
+  time 109
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 122
+  Exp0 0
+  Exp1 0
+  Exp2 0.0016117216117216117
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 135
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 162
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 175
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 202
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  voltage has no value in voltageToPower
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 16
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 29
+  Exp0 1.816309105627787E-4
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 43
+  Exp0 1.6422343159486018E-4
+  Exp1 2.1647054614087583E-10
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 69
+  Exp0 1.6234338490162667E-4
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 83
+  Exp0 1.6234338490162667E-4
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 109
+  Exp0 1.593578231292517E-4
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 122
+  Exp0 1.604741617357002E-4
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 135
+  Exp0 1.6309410475564323E-4
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+.rr
+..
+  stopped.
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 163.09410475564323
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 16
+  Exp0 159.3578231292517
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 2.1647054614087584E-4
+  Exp7 0
+  ___________________
+  time 30
+  Exp0 148.40874290544622
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 43
+  Exp0 160.10161592579175
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.print round 1.6
+  2
+.print round 1.3
+  1
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 17
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 30
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 43
+  Exp0 157
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 70
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 83
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 109
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 122
+  Exp0 156
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 136
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 162
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 175
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 202
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 215
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 228
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 255
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 268
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 294
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.microPop
+  starting microPop
+  ___________________
+  time 17
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 30
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  date: option requires an argument -- 'd'
+Try 'date --help' for more information.
+
+  ___________________
+  time 3
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  2015:06:02
+
+  ___________________
+  time 3
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 16
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 29
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 42
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  data 2015:06:02
+
+  You don't say what to do with .txt in process-data-packet
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  data 2015:06:02
+
+  You don't say what to do with .txt in process-data-packet
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  2 13:06:35 PDT 2015   unix time:  1433275595116
+  Opening Project  microPop
+.microPop
+  starting microPop
+  data_$(date +%Y:%m:%d).txt
+
+  ___________________
+  time 3
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  date has no value in process-data-packet
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  data_$(date +%Y:%m:%d).txt
+
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  2015:06:02
+
+  ___________________
+  time 3
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  date has no value in process-data-packet
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  data_2015:06:02.txt
+
+  ___________________
+  time 4
+  Exp0 160
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  date has no value in process-data-packet
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  data_2015:06:02.txt
+
+  ___________________
+  time 3
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 16
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 29
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 43
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 69
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 82
+  Exp0 160
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 109
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 122
+  Exp0 161
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
