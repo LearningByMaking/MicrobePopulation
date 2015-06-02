@@ -47935,3 +47935,116 @@ project "microPop
   Exp5 0
   Exp6 0
   Exp7 0
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  2 13:18:31 PDT 2015   unix time:  1433276311827
+  Opening Project  microPop
+.microPop
+  starting microPop
+  stopvm error
+  runvm error
+..
+  stopped.
+
+
+  Welcome to Logo
+project "microPOp
+  Start Project:  microPOp     Tue Jun  2 13:19:04 PDT 2015   unix time:  1433276344748
+  Can't open file microPOp.logo in project
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  2 13:19:12 PDT 2015   unix time:  1433276352011
+  Opening Project  microPop
+.microPop
+  starting microPop
+  ___________________
+  time 16
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 29
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 42
+  Exp0 171
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 17
+  Exp0 162
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  first doesn't like  as input in process-header
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  2 14:29:50 PDT 2015   unix time:  1433280590544
+  Opening Project  microPop
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 160
+  ___________________
+  time 16
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 159
+  ___________________
+  time 29
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 160
