@@ -48048,3 +48048,104 @@ project "microPop
   Exp5 0
   Exp6 0
   Exp7 160
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:15:12 PDT 2015   unix time:  1433366112938
+  Opening Project  microPop
+.microPop
+  starting microPop
+..
+  stopped.
+.stopvm
+.compile
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:15:48 PDT 2015   unix time:  1433366148663
+  Opening Project  microPop
+print 1234
+  Chip not found.
+print 1234
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:16:39 PDT 2015   unix time:  1433366199539
+  Opening Project  microPop
+print 1234
+  Chip not found.
+print 1234
+  Chip not found.
+print 1234
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:17:37 PDT 2015   unix time:  1433366257155
+  Opening Project  microPop
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:23:21 PDT 2015   unix time:  1433366601325
+  Opening Project  microPop
+ptin 1234
+print 1234
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:24:05 PDT 2015   unix time:  1433366645509
+  Opening Project  microPop
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:25:08 PDT 2015   unix time:  1433366708892
+  Opening Project  microPop
+print 1234
+  1234
+'.compile
+  '.compile undefined
+'.compile
+  '.compile undefined
+print 1234
+  1234
+.compile
+  Compiling...
+  1930 bytes
+.download
+  1930 bytes
+.microPop
+  starting microPop
+  nth doesn't like 154 as input in wnth
+print readMFC0
+  0
+print readMFC1
+  0
+print readMFC2
+  0
+print readMFC3
+  0
+print readMFC4
+  0
+print readMFC5
+  0
+print readMFC6
+  0
+print readMFC7
+  963
+print readMFC
+  readMFC undefined
+print readMFC8
+  readMFC8 undefined
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:28:00 PDT 2015   unix time:  1433366880483
+  Opening Project  microPop
+.compile
+  Compiling...
+  1930 bytes
+.download
+  1930 bytes
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 384
