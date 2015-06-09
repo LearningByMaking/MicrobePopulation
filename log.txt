@@ -47935,3 +47935,179 @@ project "microPop
   Exp5 0
   Exp6 0
   Exp7 0
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 12:01:46 PDT 2015   unix time:  1433876506953
+  Opening Project  microPop
+print 1234
+  Chip not found.
+print 1234
+  1234
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 12:10:42 PDT 2015   unix time:  1433877042327
+  Opening Project  microPop
+.talkto 18
+print 1234
+  Chip not found.
+.tal.talkto 16
+  I don't know how to tal.talkto
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 12:11:23 PDT 2015   unix time:  1433877083080
+  Opening Project  microPop
+print 1234
+  1234
+.talkto 18
+print 1234
+  Chip not found.
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 12:12:51 PDT 2015   unix time:  1433877171879
+  Opening Project  microPop
+print 1234
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 12:13:27 PDT 2015   unix time:  1433877207640
+  Opening Project  microPop
+print 1234
+  1234
+.talkto 18
+print 1234
+  1234
+.compile
+  Compiling...
+  1930 bytes
+.download
+  1930 bytes
+redon
+redoff
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 12:26:07 PDT 2015   unix time:  1433877967651
+  Opening Project  microPop
+.talkto 17
+print 1234
+  1234
+redon
+  redon undefined
+.compile
+  Compiling...
+  1930 bytes
+.download
+  1930 bytes
+.talkto 18
+print 1234
+  1234
+.microPop
+  starting microPop
+  nth doesn't like 210 as input in wnth
+..
+  stopped.
+  Welcome to Logo
+.compile
+  I don't know how to .compile
+.compile
+  I don't know how to .compile
+project "microPop
+  Start Project:  microPop     Tue Jun  9 13:20:07 PDT 2015   unix time:  1433881207118
+  Opening Project  microPop
+.compile
+  Compiling...
+  1930 bytes
+.talkto 18
+.download
+  1930 bytes
+.microPOp
+  starting microPop
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 16
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 29
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 56
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 69
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 82
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 109
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 122
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 135
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  first doesn't like  as input in process-header

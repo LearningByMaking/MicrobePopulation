@@ -52,7 +52,7 @@
 
 
 to collect-data
-   init-packet 55  
+   
  	let[MFC0 measureMFC0]
    let[MFC1 measureMFC1]
    let[MFC2 measureMFC2]
@@ -61,7 +61,8 @@ to collect-data
 	let[MFC5 measureMFC5]  
    let[MFC6 measureMFC6]
 	let[MFC7 measureMFC7]	
-
+	
+	init-packet 55  
    fprint :MFC0
 	fprint :MFC1
 	fprint :MFC2
