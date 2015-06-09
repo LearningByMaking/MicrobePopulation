@@ -12,7 +12,7 @@
     setUseADC5 1 ;1 = true, 0 = false
     setUseADC6 1 ;1 = true, 0 = false
     setUseADC7 1 ;1 = true, 0 = false
-    setMFCSamples 3
+    setMFCSamples 3		
     setMFCPeriod 1
  end
  to ul-power
@@ -52,7 +52,6 @@
 
 
 to collect-data
-   
  	let[MFC0 measureMFC0]
    let[MFC1 measureMFC1]
    let[MFC2 measureMFC2]
@@ -62,7 +61,7 @@ to collect-data
    let[MFC6 measureMFC6]
 	let[MFC7 measureMFC7]	
 	
-	init-packet 55  
+init-packet 55
    fprint :MFC0
 	fprint :MFC1
 	fprint :MFC2

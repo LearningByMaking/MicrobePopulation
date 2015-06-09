@@ -47937,6 +47937,7 @@ project "microPop
   Exp7 0
   Welcome to Logo
 project "microPop
+<<<<<<< HEAD
   Start Project:  microPop     Tue Jun  9 12:01:46 PDT 2015   unix time:  1433876506953
   Opening Project  microPop
 print 1234
@@ -48022,6 +48023,406 @@ project "microPop
   starting microPop
   ___________________
   time 3
+=======
+  Start Project:  microPop     Tue Jun  2 13:18:31 PDT 2015   unix time:  1433276311827
+  Opening Project  microPop
+.microPop
+  starting microPop
+  stopvm error
+  runvm error
+..
+  stopped.
+
+
+  Welcome to Logo
+project "microPOp
+  Start Project:  microPOp     Tue Jun  2 13:19:04 PDT 2015   unix time:  1433276344748
+  Can't open file microPOp.logo in project
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  2 13:19:12 PDT 2015   unix time:  1433276352011
+  Opening Project  microPop
+.microPop
+  starting microPop
+  ___________________
+  time 16
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+<<<<<<< HEAD
+  time 16
+=======
+  time 29
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+<<<<<<< HEAD
+  time 29
+  Exp0 0
+=======
+  time 42
+  Exp0 171
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+<<<<<<< HEAD
+  ___________________
+  time 56
+  Exp0 0
+=======
+..
+  stopped.
+.microPop
+  starting microPop
+  ___________________
+  time 3
+  Exp0 162
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+<<<<<<< HEAD
+  time 69
+  Exp0 0
+=======
+  time 17
+  Exp0 162
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+<<<<<<< HEAD
+  ___________________
+  time 82
+=======
+  first doesn't like  as input in process-header
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  2 14:29:50 PDT 2015   unix time:  1433280590544
+  Opening Project  microPop
+.microPop
+  starting microPop
+  ___________________
+  time 3
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+<<<<<<< HEAD
+  Exp7 0
+  ___________________
+  time 109
+=======
+  Exp7 160
+  ___________________
+  time 16
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+<<<<<<< HEAD
+  Exp7 0
+  ___________________
+  time 122
+=======
+  Exp7 159
+  ___________________
+  time 29
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+<<<<<<< HEAD
+  Exp7 0
+  ___________________
+  time 135
+=======
+  Exp7 160
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:15:12 PDT 2015   unix time:  1433366112938
+  Opening Project  microPop
+.microPop
+  starting microPop
+..
+  stopped.
+.stopvm
+.compile
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:15:48 PDT 2015   unix time:  1433366148663
+  Opening Project  microPop
+print 1234
+  Chip not found.
+print 1234
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:16:39 PDT 2015   unix time:  1433366199539
+  Opening Project  microPop
+print 1234
+  Chip not found.
+print 1234
+  Chip not found.
+print 1234
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:17:37 PDT 2015   unix time:  1433366257155
+  Opening Project  microPop
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:23:21 PDT 2015   unix time:  1433366601325
+  Opening Project  microPop
+ptin 1234
+print 1234
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:24:05 PDT 2015   unix time:  1433366645509
+  Opening Project  microPop
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:25:08 PDT 2015   unix time:  1433366708892
+  Opening Project  microPop
+print 1234
+  1234
+'.compile
+  '.compile undefined
+'.compile
+  '.compile undefined
+print 1234
+  1234
+.compile
+  Compiling...
+  1930 bytes
+.download
+  1930 bytes
+.microPop
+  starting microPop
+  nth doesn't like 154 as input in wnth
+print readMFC0
+  0
+print readMFC1
+  0
+print readMFC2
+  0
+print readMFC3
+  0
+print readMFC4
+  0
+print readMFC5
+  0
+print readMFC6
+  0
+print readMFC7
+  963
+print readMFC
+  readMFC undefined
+print readMFC8
+  readMFC8 undefined
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Wed Jun  3 14:28:00 PDT 2015   unix time:  1433366880483
+  Opening Project  microPop
+.compile
+  Compiling...
+  1930 bytes
+.download
+  1930 bytes
+.microPop
+  starting microPop
+  ___________________
+  time 3
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+<<<<<<< HEAD
+  Exp7 0
+  first doesn't like  as input in process-header
+=======
+  Exp7 384
+>>>>>>> 4aa756c071f37eb087f8c1982bc74bf96da4c2d5
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 15:24:08 PDT 2015   unix time:  1433888648191
+  Opening Project  microPop
+.compile
+  Compiling...
+  <<<<<<< undefined in collect-data
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 15:25:14 PDT 2015   unix time:  1433888714583
+  Opening Project  microPop
+.compile
+  Compiling...
+  1930 bytes
+redon
+redoff
+.talkto 17
+redon
+  Chip not found.
+print ta.talkto 17
+  ta.talkto undefined
+print 1234.talkto 17
+print 1234
+  1234.talkto undefined
+.talkto 17
+  Chip not found.
+.talkto 18
+print 1234
+  1234
+.talkto 19
+print 1234
+  1234
+.download
+  1930 bytes
+redon
+.compile
+  Compiling...
+  1930 bytes
+redon
+.download
+  1930 bytes
+redon
+print 1234
+  1234
+ul-power
+ul-init
+.talkto 20
+print 1234
+  1234
+.download
+  1930 bytes
+ul-power
+.talkto 17
+print 1234
+  Chip not found.
+print 1234
+  Chip not found.
+print 1234
+  1234
+redon
+redoff
+.talkto 18
+print 1234
+  1234
+.download
+  1930 bytes
+ul-power
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 15:32:14 PDT 2015   unix time:  1433889134375
+  Opening Project  microPop
+.rr
+  Opening Project  microPop
+  project reloaded
+.rr
+  Opening Project  microPop
+  project reloaded
+  Welcome to Logo
+project "microPOp
+  Start Project:  microPOp     Tue Jun  9 15:34:34 PDT 2015   unix time:  1433889274355
+  Can't open file microPOp.logo in project
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 15:34:42 PDT 2015   unix time:  1433889282471
+  Opening Project  microPop
+.microPop
+  starting microPop
+  I don't know how to ul-wait-idle in init-hardware
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 17
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  ___________________
+  time 30
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 15:40:23 PDT 2015   unix time:  1433889623987
+  Opening Project  microPop
+.microPop
+  starting microPop
+.rr
+  ___________________
+  time 3
+  Exp0 0
+  Exp1 0
+  Exp2 0
+  Exp3 0
+  Exp4 0
+  Exp5 0
+  Exp6 0
+  Exp7 0
+..
+  stopped.
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  ___________________
+  time 3
   Exp0 0
   Exp1 0
   Exp2 0
@@ -48070,44 +48471,155 @@ project "microPop
   Exp5 0
   Exp6 0
   Exp7 0
-  ___________________
-  time 82
-  Exp0 0
-  Exp1 0
-  Exp2 0
-  Exp3 0
-  Exp4 0
-  Exp5 0
-  Exp6 0
-  Exp7 0
-  ___________________
-  time 109
-  Exp0 0
-  Exp1 0
-  Exp2 0
-  Exp3 0
-  Exp4 0
-  Exp5 0
-  Exp6 0
-  Exp7 0
-  ___________________
-  time 122
-  Exp0 0
-  Exp1 0
-  Exp2 0
-  Exp3 0
-  Exp4 0
-  Exp5 0
-  Exp6 0
-  Exp7 0
-  ___________________
-  time 135
-  Exp0 0
-  Exp1 0
-  Exp2 0
-  Exp3 0
-  Exp4 0
-  Exp5 0
-  Exp6 0
-  Exp7 0
-  first doesn't like  as input in process-header
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 16:10:33 PDT 2015   unix time:  1433891433663
+  Opening Project  microPop
+.mnicroPop
+  I don't know how to mnicroPop
+.microPop
+  starting microPop
+  nth doesn't like 154 as input in wnth
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  type has no value in print-packet
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+,microPop
+  microPop undefined
+.microPop
+  starting microPop
+..
+  stopped.
+,rr
+  rr undefined
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  process-header
+  T55 1433892325 14102 65535 00087 05350 00000 00001 00001 00000 00001 00001 00001 00001
+  process-header
+  T55 1433892328 14086 65535 00090 06134
+  process-header
+  T55 1433892331 14102 65535 00090 07364 00000 00000 00000 00000 00000 00000 00000 00000
+  process-header
+  T55 1433892334 14102 65535 00090 06748 00000 00000 00000 00000 00000 00000 00000 00000
+  process-header
+  T55 1433892337 14102 65535 00090 09001 00000 00000 00000 00000 00000 00000 00000 00000
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+..compile
+  I don't know how to .compile
+.compile
+  Compiling...
+  1930 bytes
+.talkto 17
+.download
+  1930 bytes
+.microPop
+  starting microPop
+  process-header
+  T55 1433892400 14102 65535 00096 03482 00001 00001 00001 00001 00001 00001 00001 00001
+  process-header
+  T55 1433892403 14102 65535 00094 02982 00000 00000 00001 00000 00001 00000 00001 00000
+  process-header
+  T55 1433892406 14102 65535 00098 03109 00000 00000 00000 00000 00000 00000 00000 00000
+  process-header
+  T55 1433892409 14102 65535 00098 02449 00000 00000 00000 00000 00000 00000 00000 00000
+  process-header
+  T55 1433892413 14102 65535 00098 04888 00000 00000 00000 00000 00000 00000 00000 00000
+  process-header
+  T55 1433892452 14102 65535 00102 00869 00001 00001 00001 00001 00001 00001 00001 00001
+  process-header
+  T55 1433892455 14102 65535 00102 01073 00000 00001 00000 00000 00001 00001 00001 00000
+  process-header
+  T55 1433892458 14102 65535 00101 09959 00000 00000 00000 00000 00000 00000 00000 00000
+  process-header
+  T55 1433892461 14102 65535 00103 07724 00000 00000 00000 00000 00000 00000 00000 00000
+  process-header
+  T55 1433892464 14102 65535 00104 00163 00000 00000 00000 00000 00000 00000 00000 00000
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  power has no value in process-data-packet
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.microPop
+  starting microPop
+  1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4
+  0 0 1.9679140558261438E-4 0 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 0 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4
+  0 1.9679140558261438E-4 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 1.9679140558261438E-4 1.9679140558261438E-4 0 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4
+  0 0 0 0 0 1.9679140558261438E-4 0 1.9679140558261438E-4
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 0 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4 1.9679140558261438E-4
+  0 0 0 0 1.9679140558261438E-4 0 0 1.9679140558261438E-4
+  0 0 0 0 0 0 0 0
+  Welcome to Logo
+project "microPop
+  Start Project:  microPop     Tue Jun  9 16:32:57 PDT 2015   unix time:  1433892777555
+  Opening Project  microPop
+.microPop
+  starting microPop
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+..
+  stopped.
+.rr
+  Opening Project  microPop
+  project reloaded
+.micro.microPop
+  I don't know how to micro.microPop
+.microPop
+  starting microPop
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  ___________________________
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
+  ___________________________
