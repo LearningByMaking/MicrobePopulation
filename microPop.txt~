@@ -1,20 +1,7 @@
 ;ulogo file for $projectName
 
  constants [ [rpacket $1fc0] ]
- global [minTemp maxTemp UseADC0 UseADC1 UseADC2 UseADC3 UseADC4 UseADC5 UseADC6 UseADC7 MFCSamples MFCPeriod] 
 
- to init-globals
-    setUseADC0 1 ;1 = true, 0 = false
-    setUseADC1 1 ;1 = true, 0 = false
-    setUseADC2 1 ;1 = true, 0 = false
-    setUseADC3 1 ;1 = true, 0 = false
-    setUseADC4 1 ;1 = true, 0 = false
-    setUseADC5 1 ;1 = true, 0 = false
-    setUseADC6 1 ;1 = true, 0 = false
-    setUseADC7 1 ;1 = true, 0 = false
-    setMFCSamples 3
-    setMFCPeriod 1
- end
  to ul-power
 	 init-leds
 	 redon
@@ -25,7 +12,6 @@
  to ul-init 
 	redon	
 	greenon 
- 	init-globals      
 	wait 10	 
 	redoff
 	greenoff
@@ -38,57 +24,51 @@
  	 greenon 
 	 wait 10
 	 greenoff
-         wait 10
 	 loop
 	 [	
 		blueon	
 		collect-data
 		wait 10 
 		blueoff
-		wait 150		
+		wait 600		
 	 ]
  
  end
 
 
 to collect-data
-     
  	let[MFC0 measureMFC0]
-   let[MFC1 measureMFC1]
-   let[MFC2 measureMFC2]
+   	let[MFC1 measureMFC1]
+   	let[MFC2 measureMFC2]
 	let[MFC3 measureMFC3]
 	let[MFC4 measureMFC4]
 	let[MFC5 measureMFC5]  
-   let[MFC6 measureMFC6]
+   	let[MFC6 measureMFC6]
 	let[MFC7 measureMFC7]	
-init-packet 55
-   fprint :MFC0
+	
+	init-packet 55
+   	fprint :MFC0
 	fprint :MFC1
 	fprint :MFC2
-   fprint :MFC3
-   fprint :MFC4
+   	fprint :MFC3
+   	fprint :MFC4
 	fprint :MFC5
-   fprint :MFC6
+   	fprint :MFC6
 	fprint :MFC7
 
-   add-checksum
+   	add-checksum
 end
 
 to measureMFC7
-  ifelse (UseADC7) 
-   [ 
       let [totalValue 0]	
-      repeat MFCSamples 
+      repeat 3 
       [
          let[totalValue :totalValue + readMFC7]
-         wait MFCPeriod
+         wait 1
       ]
-         let [averageValue ( :totalValue / MFCSamples )]
+         let [averageValue ( :totalValue / 3 )]
          output :averageValue
-      ]
-   [
-      output 0
-   ]
+      
 end
 
 to readMFC7
@@ -96,20 +76,15 @@ to readMFC7
 end
 
 to measureMFC6
-  ifelse (UseADC6) 
-   [ 
       let [totalValue 0]	
-      repeat MFCSamples 
+      repeat 3 
       [
          let[totalValue :totalValue + readMFC6]
-         wait MFCPeriod
+         wait 1
       ]
-         let [averageValue ( :totalValue / MFCSamples )]
+         let [averageValue ( :totalValue / 3 )]
          output :averageValue
-      ]
-   [
-      output 0
-   ]
+      
 end
 
 to readMFC6
@@ -117,41 +92,32 @@ to readMFC6
 end
 
 to measureMFC5
-  ifelse (UseADC5) 
-   [ 
       let [totalValue 0]	
-      repeat MFCSamples 
+      repeat 3 
       [
          let[totalValue :totalValue + readMFC5]
-         wait MFCPeriod
+         wait 1
       ]
-         let [averageValue ( :totalValue / MFCSamples )]
+         let [averageValue ( :totalValue / 3 )]
          output :averageValue
-      ]
-   [
-      output 0
-   ]
+      
 end
+
 
 to readMFC5
    output readADC 5
 end
 
 to measureMFC4
-  ifelse (UseADC7) 
-   [ 
       let [totalValue 0]	
-      repeat MFCSamples 
+      repeat 3 
       [
          let[totalValue :totalValue + readMFC4]
-         wait MFCPeriod
+         wait 1
       ]
-         let [averageValue ( :totalValue / MFCSamples )]
+         let [averageValue ( :totalValue / 3 )]
          output :averageValue
-      ]
-   [
-      output 0
-   ]
+      
 end
 
 to readMFC4
@@ -159,20 +125,15 @@ to readMFC4
 end
 
 to measureMFC3
-  ifelse (UseADC7) 
-   [ 
       let [totalValue 0]	
-      repeat MFCSamples 
+      repeat 3 
       [
          let[totalValue :totalValue + readMFC3]
-         wait MFCPeriod
+         wait 1
       ]
-         let [averageValue ( :totalValue / MFCSamples )]
+         let [averageValue ( :totalValue / 3 )]
          output :averageValue
-      ]
-   [
-      output 0
-   ]
+      
 end
 
 to readMFC3
@@ -180,20 +141,15 @@ to readMFC3
 end
 
 to measureMFC2
-  ifelse (UseADC7) 
-   [ 
       let [totalValue 0]	
-      repeat MFCSamples 
+      repeat 3 
       [
          let[totalValue :totalValue + readMFC2]
-         wait MFCPeriod
+         wait 1
       ]
-         let [averageValue ( :totalValue / MFCSamples )]
+         let [averageValue ( :totalValue / 3 )]
          output :averageValue
-      ]
-   [
-      output 0
-   ]
+      
 end
 
 to readMFC2
@@ -201,41 +157,31 @@ to readMFC2
 end
 
 to measureMFC1
-  ifelse (UseADC7) 
-   [ 
       let [totalValue 0]	
-      repeat MFCSamples 
+      repeat 3 
       [
          let[totalValue :totalValue + readMFC1]
-         wait MFCPeriod
+         wait 1
       ]
-         let [averageValue ( :totalValue / MFCSamples )]
-         output :averageValue
-      ]
-   [
-      output 0
-   ]
+	 let [averageValue ( :totalValue / 3 )]
+	 output :averageValue
+
 end
 
 to readMFC1
    output readADC 1
 end
 
-to measureMFC0
-  ifelse (UseADC7) 
-   [ 
+to measureMFC0      
       let [totalValue 0]	
-      repeat MFCSamples 
+      repeat 3 
       [
          let[totalValue :totalValue + readMFC0]
-         wait MFCPeriod
+         wait 1
       ]
-         let [averageValue ( :totalValue / MFCSamples )]
+         let [averageValue ( :totalValue / 3 )]
          output :averageValue
-      ]
-   [
-      output 0
-   ]
+      
 end
 
 to readMFC0

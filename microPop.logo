@@ -4,12 +4,13 @@
 to microPop
  	print "|starting microPop| 
 	make "fileName exec "|sh genFileName.sh|	
-	init-microPop
- 	loop 
- 	[
+	init-microPop 	
+	wait 150
+	loop 
+ 	[	
 		prfopen :fileName
 		make "dataline exec "|sh currentTime.sh|	
-		
+		print "___________________________
 		talkto 16 		
 		see-packet
 		talkto 17
@@ -20,45 +21,64 @@ to microPop
 		see-packet
 		talkto 20
 		see-packet
-		print "___________________________
 		prfprint :dataline
 		prfclose
- 
-		wait 360
+		wait 600
  	]
  end
  
 to init-microPop
   init-calibration
-  init-nodes
-  start-nodes
+  stop-all
+  wait 12
+  ul-power-all
+  wait 12
+  ul-init-all
+  wait 12
+  ul-go-all
   make "resistance 3300
 end
 
-
-to init-nodes
+to stop-all
 	talkto 16
-	init-hardware
+	stopvm
 	talkto 17
-	init-hardware
+	stopvm
 	talkto 18
-	init-hardware
+	stopvm
 	talkto 19
-	init-hardware
+	stopvm
 	talkto 20
-	init-hardware
+	stopvm
 end
 
- 
-to init-hardware
-   stopvm 
-   ul-power
-   wait 11
-   ul-init         
-   wait 11	
-end 
+to ul-power-all
+	talkto 16
+	ul-power
+	talkto 17
+	ul-power
+	talkto 18
+	ul-power
+	talkto 19
+	ul-power
+	talkto 20
+	ul-power
+end
 
-to start-nodes
+to ul-init-all
+	talkto 16
+	ul-init
+	talkto 17
+	ul-init
+	talkto 18
+	ul-init
+	talkto 19
+	ul-init
+	talkto 20
+	ul-init
+end
+
+to ul-go-all
 	talkto 16
 	ul-go
 	talkto 17
@@ -70,7 +90,6 @@ to start-nodes
 	talkto 20
 	ul-go
 end
-
 
 to init-calibration
   make "volt_cal [0 0 4095 3.3]      ; pairs (adc,volt)
@@ -78,7 +97,10 @@ end
 
 to see-packet 
   make "packet-bytes collect-packet  
-  process-header      
+  if((count :packet-bytes) > 0)
+  [
+  	process-header
+  ]      
 end
 
 
