@@ -3,13 +3,15 @@
 
 to microPop
  	print "|starting microPop| 
-	make "fileName exec "|sh genFileName.sh|	
+	make "fileName exec "|sh genFileName.sh|
+	make "valid 1
+	make "rsync "|sh datasync_mfc.sh|		
 	init-microPop 	
-	wait 150
+	wait 5 * 60 * 30
 	loop 
  	[	
 		prfopen :fileName
-		make "dataline exec "|sh currentTime.sh|	
+		make "dataline now	
 		print "___________________________
 		talkto 16 		
 		see-packet
@@ -21,9 +23,15 @@ to microPop
 		see-packet
 		talkto 20
 		see-packet
-		prfprint :dataline
+		if(:valid = 1)
+		[
+		   prfprint :dataline
+		]		
 		prfclose
-		wait 600
+		wait 10
+		ignore exec :rsync                
+		wait 20 ;10 * 60 * 30
+		
  	]
  end
  
@@ -97,10 +105,13 @@ end
 
 to see-packet 
   make "packet-bytes collect-packet  
-  if(count :packet-bytes > 0)
+  ifelse((count :packet-bytes) > 0)
   [
   	process-header
-  ]      
+  ]     
+  [
+	make "valid 0	
+  ]	 
 end
 
 
@@ -210,4 +221,7 @@ end
 to print-packet
   make "wp packet-words :packet-bytes
   print ( se word "T bf 100 + :type round now / 1000 :wp  ) 
+end
+
+to ignore :x
 end

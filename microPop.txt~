@@ -26,17 +26,15 @@
 	 greenoff
 	 loop
 	 [	
-		blueon	
-		collect-data
-		wait 10 
-		blueoff
-		wait 600		
+		collect-data 
+		wait 10*60*30 		
 	 ]
  
  end
 
 
 to collect-data
+	blueon
  	let[MFC0 measureMFC0]
    	let[MFC1 measureMFC1]
    	let[MFC2 measureMFC2]
@@ -57,6 +55,7 @@ to collect-data
 	fprint :MFC7
 
    	add-checksum
+	blueoff
 end
 
 to measureMFC7

@@ -27,7 +27,7 @@
 	 loop
 	 [	
 		collect-data 
-		wait 600		
+		wait 10 * 60 * 30 		
 	 ]
  
  end
